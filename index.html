@@ -8,7 +8,301 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inconsolata:wght@300;400;500;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:        #1a1611;
+    --ink-mid:    #3d3730;
+    --ink-light:  #7a6f5e;
+    --paper:      #f4f0e6;
+    --paper-warm: #ede8d8;
+    --rule:       #c8c0ae;
+    --rule-thin:  #ddd6c5;
+    --accent:     #8b3a1c;
+    --accent-2:   #4a6741;
+    --gap:        1px solid var(--rule-thin);
+  }
 
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; background: var(--paper); color: var(--ink); scroll-behavior: smooth; }
+  body { font-family: 'Inconsolata', monospace; font-weight: 300; line-height: 1.6; background: var(--paper); }
+
+  /* ── HEADER ── */
+  header { border-bottom: 1px solid var(--rule); padding: 0 2rem; }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; height: 3.2rem;
+  }
+  .logo {
+    display: flex; align-items: center; gap: .6rem;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace; font-size: .75rem;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--ink);
+  }
+  .logo img { height: 28px; width: auto; }
+  nav { display: flex; gap: 0; }
+  .subnav { position: relative; }
+  .subnavbtn, nav a {
+    background: none; border: none; border-left: var(--gap);
+    font-family: 'Inconsolata', monospace; font-size: .72rem;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--ink-light);
+    cursor: pointer; padding: .5rem .9rem; text-decoration: none; display: block; white-space: nowrap;
+  }
+  .subnavbtn:hover, nav a:hover { color: var(--ink); }
+  .subnav-content {
+    display: none; position: absolute; top: 100%; left: 0;
+    background: var(--paper-warm); border: 1px solid var(--rule); z-index: 99; min-width: 140px;
+  }
+  .subnav-content a { border-left: none; border-top: var(--gap); }
+  .subnav:hover .subnav-content { display: block; }
+
+  /* ── HOMEPAGE HERO ── */
+  .home-hero {
+    min-height: 88vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--rule);
+    overflow: hidden;
+    position: relative;
+  }
+  .home-hero-left {
+    padding: 5rem 3rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--rule);
+  }
+  .home-hero-right {
+    position: relative;
+    overflow: hidden;
+  }
+  .home-hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: sepia(.3) contrast(1.05);
+    opacity: .78;
+  }
+  .home-hero-right-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(244,240,230,.05) 0%, rgba(244,240,230,.55) 100%);
+  }
+
+  .home-label {
+    font-size: .65rem; letter-spacing: .22em; text-transform: uppercase; color: var(--ink-light);
+    margin-bottom: 2rem;
+  }
+  .home-hero h1 {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--ink);
+  }
+  .home-hero h1 em { font-style: italic; color: var(--accent); }
+
+  .home-sub {
+    margin-top: auto;
+    padding-top: 3rem;
+  }
+  .home-sub p {
+    font-size: .85rem;
+    color: var(--ink-mid);
+    line-height: 1.75;
+    max-width: 42ch;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    font-family: 'Inconsolata', monospace; font-size: .72rem;
+    letter-spacing: .1em; text-transform: uppercase; text-decoration: none;
+    padding: .55rem 1.1rem; border: 1px solid var(--ink); color: var(--ink);
+    background: none; cursor: pointer; transition: background .15s, color .15s; display: inline-block;
+  }
+  .btn:hover { background: var(--ink); color: var(--paper); }
+  .btn.primary { background: var(--ink); color: var(--paper); }
+  .btn.primary:hover { background: var(--accent); border-color: var(--accent); }
+  .cta-group { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; }
+
+  /* ── THESIS BANNER ── */
+  .thesis-band {
+    border-bottom: 1px solid var(--rule);
+    padding: 1rem 2rem;
+    background: var(--paper-warm);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .thesis-band p {
+    font-size: .72rem;
+    letter-spacing: .05em;
+    color: var(--ink-mid);
+  }
+  .thesis-band a {
+    font-size: .65rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .thesis-band a:hover { text-decoration: underline; }
+
+  /* ── PREVIEW SECTION ── */
+  .preview-section {
+    padding: 5rem 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .preview-inner { max-width: 1200px; margin: 0 auto; }
+  .section-header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 3rem;
+    align-items: baseline;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--ink);
+  }
+  .section-label {
+    font-size: .65rem; letter-spacing: .22em; text-transform: uppercase; color: var(--ink-light);
+  }
+  .section-title {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 400;
+    color: var(--ink);
+  }
+
+  /* oracle tool */
+  .oracle-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: .8rem;
+    margin-bottom: 1.2rem;
+  }
+  label {
+    display: flex; flex-direction: column;
+    font-size: .65rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--ink-light); gap: .3rem;
+  }
+  input[type="range"] { width: 100%; accent-color: var(--ink); }
+  input[type="text"], input[type="number"] {
+    font-family: 'Inconsolata', monospace; font-size: .8rem;
+    background: var(--paper-warm); border: 1px solid var(--rule);
+    padding: .4rem .6rem; color: var(--ink); width: 100%;
+  }
+  input[type="text"]:focus, input[type="number"]:focus {
+    outline: 1px solid var(--ink); border-color: var(--ink);
+  }
+  .input-row { display: flex; gap: .6rem; margin-bottom: 1rem; align-items: flex-end; }
+  .input-row input[type="text"] { flex: 1; font-size: .85rem; padding: .55rem .7rem; }
+  .val-badge {
+    font-size: .65rem; color: var(--ink-light); font-weight: 700; letter-spacing: .05em;
+  }
+  #sequence {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 6px;
+    margin-top: 1rem;
+  }
+  .seq-cell {
+    height: 72px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.08);
+    display: flex; align-items: flex-end; justify-content: center;
+    padding-bottom: 6px;
+  }
+  .seq-cell span { font-size: .6rem; color: rgba(255,255,255,.7); text-shadow: 0 1px 2px rgba(0,0,0,.4); }
+  #log {
+    margin-top: .8rem; font-size: .65rem; color: var(--ink-light);
+    white-space: pre-wrap; line-height: 1.7; max-height: 180px; overflow-y: auto;
+  }
+  .tool-note { font-size: .65rem; color: var(--ink-light); margin-top: .6rem; font-style: italic; }
+
+  /* ── 3-COL INFO ── */
+  .info-section {
+    padding: 4rem 2rem;
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper-warm);
+  }
+  .info-inner { max-width: 1200px; margin: 0 auto; }
+  .info-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+    border-top: 1px solid var(--ink); margin-top: 2.5rem;
+  }
+  .info-card {
+    padding: 2.5rem 1.5rem;
+    border-right: 1px solid var(--rule);
+  }
+  .info-card:last-child { border-right: none; }
+  .info-num {
+    font-size: .62rem; letter-spacing: .2em; color: var(--ink-light); display: block; margin-bottom: 1rem;
+  }
+  .info-card h3 {
+    font-family: 'IM Fell English', serif; font-size: 1.1rem; font-weight: 400;
+    color: var(--ink); margin-bottom: .8rem;
+  }
+  .info-card p { font-size: .78rem; color: var(--ink-mid); line-height: 1.7; }
+
+  /* ── BOTTOM CTA ── */
+  .home-cta {
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  /* Garnier-inspired geometry */
+  .home-cta::before {
+    content: '';
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    border: 1px solid var(--rule-thin);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .home-cta-text {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(1.3rem, 3vw, 2.2rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink);
+    max-width: 680px;
+    margin: 0 auto 2rem;
+    line-height: 1.4;
+    position: relative; z-index: 1;
+  }
+  .home-cta .cta-group { justify-content: center; position: relative; z-index: 1; }
+
+  /* ── FOOTER ── */
+  footer { border-top: 1px solid var(--ink); padding: 1.5rem 2rem; background: var(--paper-warm); }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-meta { font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-light); }
+  footer nav { display: flex; flex-wrap: wrap; gap: 0; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 800px) {
+    .home-hero { grid-template-columns: 1fr; min-height: auto; }
+    .home-hero-right { height: 280px; }
+    .home-hero-left { padding: 3rem 1.5rem; border-right: none; }
+    .info-grid { grid-template-columns: 1fr; }
+    .info-card { border-right: none; border-bottom: var(--gap); }
+    .oracle-controls { grid-template-columns: 1fr 1fr; }
+    .section-header { grid-template-columns: 1fr; gap: .5rem; }
+  }
+
+  /* fade-in entrance */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .home-label { animation: fadeUp .6s .1s both; }
+  .home-hero h1 { animation: fadeUp .7s .2s both; }
+  .home-sub { animation: fadeUp .7s .4s both; }
+</style>
 </head>
 <body>
 
