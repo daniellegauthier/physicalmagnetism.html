@@ -19,12 +19,24 @@
     "areaServed":"Global"
   }
   </script>
+  <style>
+    /* Inline additions to complement assets/css/style.css */
+    .workflow-box { background: rgba(0,0,0,0.02); padding: 20px; border-left: 3px solid #594E39; margin: 20px 0; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin: 25px 0; }
+    .pricing-tier { border: 1px solid #e0e0e0; padding: 20px; border-radius: 4px; background: #fff; }
+    .pricing-tier.featured { border: 2px solid #594E39; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .tier-label { font-size: 0.8rem; text-transform: uppercase; tracking-spacing: 1px; color: #666; font-weight: bold; }
+    .price { font-size: 1.8rem; font-weight: bold; margin: 10px 0; color: #111; }
+    .price span { font-size: 1rem; font-weight: normal; color: #666; }
+    .testimonial-box { background: #faf9f6; padding: 25px; border-radius: 4px; border: 1px dashed #594E39; margin: 30px 0; font-style: italic; }
+    .testimonial-box blockquote { margin: 0 0 10px 0; padding: 0; border: none; }
+    .testimonial-box cite { font-weight: bold; font-style: normal; display: block; text-align: right; }
+  </style>
 </head>
 <body>
 
 <div class="page-wrap">
 
-  <!-- SIDEBAR NAV -->
   <header>
     <a class="logo" href="/physicalmagnetism.html/">
       <img src="./assets/img/la matriz root only.png" alt="La Matriz logo">
@@ -43,7 +55,6 @@
     </ul>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main>
 
     <div class="breadcrumb">
@@ -52,145 +63,95 @@
       <a href="/physicalmagnetism.html/api">Forward to API →</a>
     </div>
 
-    <h1>Consulting with Physical Magnetism</h1>
+  <!-- CONSULTING SECTION -->
+<section id="consulting" class="consulting-container">
+  
+  <!-- BRAND HEADER & LOGO INTEGRATION -->
+  <div class="consulting-header">
+    <img src="la matriz root only.png" alt="La Matrice - Physical Magnetism Consulting" class="consulting-logo" />
+    <h1>Physical Magnetism Consulting</h1>
+    <p class="subtitle">A mirror, not a verdict. Turn your felt, sensory data into conscious trajectories you can act on.</p>
+  </div>
 
-    <p><i>Powered by Linguistic Cartography</i> — <a href="/physicalmagnetism.html/thesis">Read the Thesis</a></p>
-
-    <p>I translate words into 4D systems to reveal geometric patterns and beneficial choices.</p>
-
-    <hr>
-
-    <h2>Start with a Journal Entry</h2>
-
-    <p>Let's reduce the amount of time you spend searching for balance. My work asks: what is actually acting on us, beneath the surface?</p>
-
-    <p>If you want alignment, don't separate from your senses. The goal is reciprocity.</p>
-
-    <p>I make cybernetic feedback systems for bottom-up design.<br>
-    You can get the target outcome with appropriate range awareness.<br>
-    Stop killing what makes you unique.<br>
-    Shift towards resonance.</p>
-
-    <p>
-      <a href="mailto:daniellegauthier2028@u.northwestern.edu">Book a Consultation</a>
-      &nbsp;·&nbsp;
-      <a href="https://editor.p5js.org/danielle.gauthier6/full/QCKnAGTSh" target="_blank">Create a Personal Pluriverse Composition</a>
-      &nbsp;·&nbsp;
-      <a href="https://editor.p5js.org/danielle.gauthier6/full/ubnJx2fjD" target="_blank">Create a Business Pluriverse Composition</a>
+  <!-- THE WORKFLOW CLEARLY DEFINED -->
+  <div class="workflow-section">
+    <h2>The Main Workflow: Your Data-Somatic Journey</h2>
+    <p class="workflow-intro">
+      Every decision is an act of sorting. Traditional frameworks leave out most of what you actually feel, dismissing gut and body signals as noise. The Physical Magnetism workflow puts your felt data back into the calculation through a private, browser-based, interactive mirror. 
     </p>
+    
+    <div class="workflow-steps">
+      <div class="step-card">
+        <h3>Step 1: The Pluriverse Journal</h3>
+        <p><strong>Hold it & Name it.</strong> We begin with localized, reflective text prompts designed for slow, deliberate dialogue. You enter your current state—your challenges, stuck points, and nuances—in plain text. From your own words, the engine maps sentiment scores without ever storing your data.</p>
+      </div>
+      
+      <div class="step-card">
+        <h3>Step 2: The Color Plotter</h3>
+        <p><strong>Calibrate & Act.</strong> Your narrative maps directly onto <em>La Matrice</em>—a 15-color semantic-somatic framework. The tool plots your words into a visible, color-based trajectory indicating mass (saturation), voltage (energy transitions), and essential rest ratios. You read the sequence, export your raw JSON data, and author your own next steps across mind, body, and speech.</p>
+      </div>
+    </div>
+  </div>
 
-    <hr>
+  <!-- MARKET-ALIGNED TIERED PRICING -->
+  <div class="pricing-section">
+    <h2>Consultation Tiers</h2>
+    <p class="pricing-intro">
+      Pricing is structured transparently using competitive market rates for advanced human design, strategic coaching, and somatic frameworks, scaled to support economic equity and collective care.
+    </p>
+    
+    <div class="pricing-grid">
+      <!-- TIER 1: THE ACCESSIBLE/SEED TIER -->
+      <div class="pricing-tier">
+        <span class="tier-label">Tier 1: Community & Access</span>
+        <h3>$125 <span class="per-session">/ session</span></h3>
+        <p class="tier-desc">Designed for individuals on lower incomes, peer-support organizers, or those from marginalized communities needing an accessible entryway into somatic data data-mapping.</p>
+        <ul>
+          <li>Full 60-minute interactive workflow session</li>
+          <li>Initial Pluriverse Journal prompt review</li>
+          <li>Live navigation of the Color Plotter map</li>
+          <li>Your exported local JSON trajectory file</li>
+        </ul>
+      </div>
 
-    <h2><a name="Tools">Physical Magnetism Consulting</a></h2>
-    <p><i>a practice of reflection, data mapping, and entanglement</i></p>
+      <!-- TIER 2: THE STANDARD DEEP DIVE -->
+      <div class="pricing-tier featured">
+        <span class="tier-label">Tier 2: Standard Exploration</span>
+        <h3>$250 <span class="per-session">/ session</span></h3>
+        <p class="tier-desc">The standard market rate for comprehensive individual chart readings and somatic-alignment consulting. Ideal for practitioners, developers, and creatives seeking clarity on a specific stuck point.</p>
+        <ul>
+          <li>Full 75-minute detailed assessment mapping</li>
+          <li>Deep-dive analysis of your custom 15-color trajectory</li>
+          <li>Somatic tool matching & rest-ratio calibration</li>
+          <li>Post-session documentation & workflow guide</li>
+        </ul>
+      </div>
 
-    <h3>Personal Data Study Tools</h3>
+      <!-- TIER 3: STRATEGIC & SYSTEM ALIGNMENT -->
+      <div class="pricing-tier">
+        <span class="tier-label">Tier 3: Sustainer & Strategy</span>
+        <h3>$380 <span class="per-session">/ session</span></h3>
+        <p class="tier-desc">For highly resourced individuals, founders, or organizations looking to apply La Matrice's relational ethics to team dynamics, governance systems, or algorithmic interpretability.</p>
+        <ul>
+          <li>Extended 90-minute strategic consultation</li>
+          <li>Advanced alignment analysis (Mind, Body, Speech pathways)</li>
+          <li>Integration strategy for your own tools or API design projects</li>
+          <li>Contributes directly to funding Tier 1 community scholarships</li>
+        </ul>
+      </div>
+    </div>
+    <p class="sliding-scale-note">* Custom enterprise consulting, API integration tools, and multi-session organizational design are set per engagement via sliding scale for mission-aligned partners.</p>
+  </div>
 
-    <table class="table-thin">
-      <tr>
-        <td>Womb Journal</td>
-        <td><a href="https://editor.p5js.org/danielle.gauthier6/full/UQCgDYk7Y">shed a thought</a></td>
-      </tr>
-      <tr>
-        <td>Sonic Mirror</td>
-        <td><a href="https://editor.p5js.org/danielle.gauthier6/full/MUjGMUcQa">consider revolution</a></td>
-      </tr>
-      <tr>
-        <td>le retour ouvert (Opened Return)</td>
-        <td><a href="https://editor.p5js.org/danielle.gauthier6/full/TD5cWIAyF">follow to open</a></td>
-      </tr>
-      <tr>
-        <td>Language Entangler</td>
-        <td><a href="https://docs.google.com/spreadsheets/d/1f9bLfM0Z-9UA2cAxjXPMOPfu_QTDgPeLNGmZa6vpYf4/edit?usp=sharing">explore a concept</a></td>
-      </tr>
-      <tr>
-        <td>Poem Generator</td>
-        <td><a href="https://docs.google.com/spreadsheets/d/1xY7bdHrH6vYF24ND2mVLuHwfz6rR39mpGlOcW4nv6_Q/edit?usp=sharing">play with data</a></td>
-      </tr>
-      <tr>
-        <td>Color Dance</td>
-        <td><a href="https://editor.p5js.org/danielle.gauthier6/full/LN4763E7e">create a physical womb</a></td>
-      </tr>
-      <tr>
-        <td>Sound to Color</td>
-        <td><a href="https://editor.p5js.org/danielle.gauthier6/full/Rd5ll2FxD">visualize your environment</a></td>
-      </tr>
-    </table>
+  <!-- FEATURED TESTIMONIAL -->
+  <div class="testimonial-section">
+    <blockquote>
+      “My consultation with Danielle was extremely eye opening. I have never engaged with this kind of self-assessment before, and the approach she offers is mentally, energetically and emotionally expansive. There were personal challenges that I addressed in her intake form that, through our session together, she offered entirely new perspectives and ways of taking action to navigate through those stuck points. I will be sitting with her assessment, somatic tools, and intuitive guidance for a long time to come, as I know it will continue to reveal its relevance and wisdom layer by layer. This is such a fascinating and valuable offering that virtually anyone can benefit from!”
+    </blockquote>
+    <cite>— Hollis Maloney</cite>
+  </div>
 
-    <h3>Digital Art &amp; Education</h3>
-
-    <table class="table-thin">
-      <tr>
-        <td>locasitiita zine</td>
-        <td>
-          <a href="https://drive.google.com/file/d/0B908Tv7dF0djN2IyeFRIYTVneDQ/view?usp=sharing&resourcekey=0-ykbKdmy56IcOqlrNtxfDOA">vol i</a>
-          &nbsp;·&nbsp;
-          <a href="https://drive.google.com/file/d/1Wyc52RCnheQ4eM17soRELqn1sS95nE2w/view?usp=sharing">vol ii</a>
-          &nbsp;·&nbsp;
-          <a href="https://drive.google.com/file/d/1OriPxwPJdP2R1Dx-RV4avvS5fjYZOgGS/view?usp=sharing">vol iii</a>
-        </td>
-      </tr>
-      <tr>
-        <td>destructive proof of utopia</td>
-        <td><a href="https://drive.google.com/file/d/1WJAR9msfl7gYGvgrXPlm2n-GSRRZulFZ/view?usp=sharing">Undergraduate Thesis</a></td>
-      </tr>
-    </table>
-
-    <hr>
-
-    <h2>Contact to Book an Event</h2>
-
-    <table>
-      <tr>
-        <td style="padding-right:20px;vertical-align:top;">
-
-          <h3>Self Entanglement</h3>
-          <p><i>2 hour integrative workshop</i></p>
-          <ul>
-            <li>energetic asana movement</li>
-            <li>journaling</li>
-            <li>sensing</li>
-            <li>mapping</li>
-            <li>ethnography</li>
-            <li>yoga asana</li>
-            <li>meditation</li>
-            <li>poetry</li>
-          </ul>
-
-          <h3>Magnetic Geometry</h3>
-          <p><i>30 minute reflection workshop</i></p>
-          <ul>
-            <li>simple drawing</li>
-            <li>geometry</li>
-            <li>language cartography</li>
-            <li>visualizing patterns in online + offline life</li>
-          </ul>
-
-          <h3>Partner &amp; Host</h3>
-          <p><i>community events</i></p>
-          <ul>
-            <li>yoga studios</li>
-            <li>wellness spaces</li>
-            <li>libraries</li>
-            <li>community centers</li>
-            <li>art spaces</li>
-          </ul>
-
-        </td>
-        <td style="vertical-align:top;">
-          <img src="./assets/img/geometric mapping.jpeg" alt="Geometric Mapping Example" width="160" style="border:1px solid #594E39;">
-        </td>
-      </tr>
-    </table>
-
-    <hr>
-
-    <h3>Also available for</h3>
-    <ul>
-      <li>Emotional AI — model design, architectures, and evaluation frameworks for chromatic semantic systems</li>
-      <li>Color Geometry — semantic mapping, clustering, sequence design, and symbolic reasoning UX</li>
-      <li>Data Sovereignty — decentralized data architectures, consent practices, and privacy rituals</li>
-    </ul>
+</section>
 
     <p>
       <a href="mailto:daniellegauthier2028@u.northwestern.edu">Start a project</a>
@@ -198,7 +159,6 @@
       <a href="/physicalmagnetism.html/thesis">Read the thesis</a>
     </p>
 
-    <!-- Repeated nav at bottom -->
     <hr>
     <ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:0;">
       <li><a href="/physicalmagnetism.html/">Home</a></li>
@@ -214,9 +174,7 @@
     <p class="meta">© <span id="y"></span> Physical Magnetism</p>
 
   </main>
-</div><!-- end .page-wrap -->
-
-<script>
+</div><script>
   document.getElementById('y').textContent = new Date().getFullYear();
 </script>
 
