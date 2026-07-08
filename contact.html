@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -12,26 +12,6 @@
   <meta property="og:description" content="Private, secure contact with Physical Magnetism founder Danielle Gauthier.">
   <meta property="og:image" content="https://lamatriz.ai/og.png">
   <meta name="theme-color" content="#0B0B0C">
-  <style> 
-    ul{
-    padding-left:20px;
-}
-
-.highlight{
-    background:#f0f4ff;
-    padding:15px;
-    border-left:4px solid #6a7cff;
-    margin-top:15px;
-}
-
-.contact-box{
-    margin-top:30px;
-    padding:25px;
-    background:#111;
-    color:white;
-    border-radius:6px;
-}
-  </style>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -50,217 +30,81 @@
 </head>
 <body>
 
-<header>
-  <div class="container header-inner">
-    <a class="logo" href="/">
+<div class="page-wrap">
+
+  <header>
+    <a class="logo" href="/physicalmagnetism.html/">
       <img src="./assets/img/la matriz root only.png" alt="La Matriz Consulting logo">
       <span>physicalmagnetism.html</span>
     </a>
+    <ul id="primaryNav">
+      <li><a href="/physicalmagnetism.html/">Home</a></li>
+      <li><a href="/physicalmagnetism.html/consulting">Consulting</a></li>
+      <li><a href="/physicalmagnetism.html/api">API</a></li>
+      <li><a href="/physicalmagnetism.html/thesis">Thesis</a></li>
+      <li><a href="/physicalmagnetism.html/privacy">Privacy</a></li>
+      <li><a href="/physicalmagnetism.html/terms">Terms</a></li>
+      <li><a href="/physicalmagnetism.html/gnh-work-statement">Work Statement</a></li>
+      <li><a href="/physicalmagnetism.html/socials">Socials</a></li>
+      <li><strong>Contact</strong></li>
+    </ul>
+  </header>
 
-     <div class="navbar">
-    <button id="menuToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
-      <nav id="primaryNav">
-      <div class="subnav">
-        <button class="subnavbtn">Services</button>
-        <div class="subnav-content">
-           <a href="/physicalmagnetism.html/consulting" aria-current="page">Consulting</a>
-        </div>
-      </div>
-      <div class="subnav">
-        <button class="subnavbtn">More Info</button>
-        <div class="subnav-content">
-          <a href="/physicalmagnetism.html/api">API</a>
-          <a href="/physicalmagnetism.html/thesis">Thesis</a>
-        </div>
-      </div>
-      <div class="subnav">
-        <button class="subnavbtn">Contracts</button>
-        <div class="subnav-content">
-          <a href="/physicalmagnetism.html/privacy">Privacy</a>
-          <a href="/physicalmagnetism.html/terms">Terms</a>
-          <a href="/physicalmagnetism.html/gnh-work-statement">Work Statement</a>
-        </div>
-      </div>
-      <div class="subnav">
-        <button class="subnavbtn">About</button>
-        <div class="subnav-content">
-          <a class="cta" href="/physicalmagnetism.html/socials">Socials</a>
-          <a class="cta" href="/physicalmagnetism.html/contact">Contact</a>
-        </div>
-       </div>
-        </nav>
-  </div>
-</header>
+  <main>
 
-<main>
-
-  <!-- Hero -->
-
-
-<div class="cell span2">
-  <td>
-  <table class="table-thin">
-    <tr><th><h1>Physical Magnetism Consulting</h1></th><th>a practice of reflection,<br>
-data mapping,<br>
-and gentle focus</th><th></th><th></th></tr>
-  <tr><td><img src="./assets/img/dg profile.JPG" alt="Portrait of Danielle Gauthier" width="140" height="140" style="object-fit:cover; width:140px; height:140px;"></h3></td><td><h1>Danielle Gauthier, Founder</h1></td><td></td><td></td></tr>
-  <tr><td>Physical Magnetism Consulting began as an exploration of how attention,
-technology, and embodied awareness interact in everyday life.
-
-The workshops bring together gentle yoga, digital ethnography,
-mapping practices, and collage to help participants reflect on
-their media environments and emotional landscapes.
-
-The work draws inspiration from contemplative traditions,
-experimental art, and community learning spaces.</td><td><a href="mailto:daniellegauthier2028@u.northwestern.edu" class="btn primary">
-Email Danielle
-</a>
-            </div></td><td></td><td></td></tr>
-  
-  </table>
-
-
-
-
-
-
-
-
-  <!-- Contact form
-  <section class="grid" id="form">
-    <div class="container">
-      <article class="card" style="grid-column:1/-1;">
-        <h2>Send a secure message</h2>
-        <form id="contact-form" action="/contact/submit" method="POST" novalidate>
-          CSRF placeholder for your server to verify 
-          <input type="hidden" name="csrf" id="csrf">
-          Timezone & page 
-          <input type="hidden" name="tz" id="tz">
-          <input type="hidden" name="page" value="/contact">
-           Honeypot 
-          <div class="visually-hidden" aria-hidden="true">
-            <label>Company <input type="text" name="company" autocomplete="organization"></label>
-          </div>
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required maxlength="120" autocomplete="name" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--border);background:#0A0B0D;color:var(--text);">
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" inputmode="email" required maxlength="160" autocomplete="email" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--border);background:#0A0B0D;color:var(--text);">
-            </div>
-          </div>
-
-          <div style="margin-top:12px">
-            <label for="subject">Subject</label>
-            <input id="subject" name="subject" type="text" maxlength="160" placeholder="Coaching inquiry, workshop, research, press, etc." style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--border);background:#0A0B0D;color:var(--text);">
-          </div>
-
-          <div style="margin-top:12px">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="7" required maxlength="5000" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--border);background:#0A0B0D;color:var(--text);" placeholder="How can we help? Please avoid sharing sensitive details."></textarea>
-          </div>
-
-          Lightweight challenge 
-          <div style="margin-top:12px; display:flex; gap:12px; align-items:center">
-            <label for="captcha" id="captchaLabel">What is 2 + 3?</label>
-            <input id="captcha" name="captcha" type="text" inputmode="numeric" pattern="^[0-9]+$" required style="max-width:120px;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#0A0B0D;color:var(--text);">
-          </div>
-
-          <div class="cta-group" style="margin-top:16px">
-            <button class="btn primary" type="submit">Send message</button>
-            <a class="btn ghost" href="mailto:danielle.gauthier@lamatriz.ai">Email instead</a>
-          </div>
-
-          <p class="meta" style="margin-top:10px;color:#B7BCCD">
-            By sending, you consent to us storing your message for follow-up (max 90 days). We don’t sell or share your data. See our <a href="/privacy">Privacy</a>.
-          </p>
-          <div id="form-status" role="status" class="meta" style="margin-top:8px;color:#B7BCCD"></div>
-        </form>
-      </article>
+    <div class="breadcrumb">
+      <a href="/physicalmagnetism.html/">← Home</a>
+      &nbsp;·&nbsp;
+      <a href="/physicalmagnetism.html/consulting">Forward to Consulting →</a>
     </div>
-  </section>
-  -->
-  
 
-</main>
+    <h1>Physical Magnetism Consulting</h1>
+    <p class="muted"><i>A practice of reflection, data mapping, and gentle focus.</i></p>
 
-<footer>
-  <div class="container footer-inner">
-    <nav class="footer-nav" aria-label="Footer">
-      <div class="subnav">
-        <button class="subnavbtn">Services</button>
-        <div class="subnav-content">
-           <a href="/physicalmagnetism.html/consulting" aria-current="page">Consulting</a>
-        </div>
+    <hr>
+
+    <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+      <img src="./assets/img/dg profile.JPG" alt="Portrait of Danielle Gauthier" width="140" height="140" style="object-fit: cover; border-radius: 4px;">
+      <div>
+        <h2 style="margin-top: 0;">Danielle Gauthier, Founder</h2>
+        <p>
+          Physical Magnetism Consulting began as an exploration of how attention,
+          technology, and embodied awareness interact in everyday life.
+        </p>
+        <p>
+          The workshops bring together gentle yoga, digital ethnography,
+          mapping practices, and collage to help participants reflect on
+          their media environments and emotional landscapes.
+        </p>
+        <p>
+          The work draws inspiration from contemplative traditions,
+          experimental art, and community learning spaces.
+        </p>
+        <p>
+          <a href="mailto:daniellegauthier2028@u.northwestern.edu">Email Danielle Gauthier →</a>
+        </p>
       </div>
-      <div class="subnav">
-        <button class="subnavbtn">More Info</button>
-        <div class="subnav-content">
-          <a href="/physicalmagnetism.html/api">API</a>
-          <a href="/physicalmagnetism.html/thesis">Thesis</a>
-        </div>
-      </div>
-      <div class="subnav">
-        <button class="subnavbtn">Contracts</button>
-        <div class="subnav-content">
-          <a href="/physicalmagnetism.html/privacy">Privacy</a>
-          <a href="/physicalmagnetism.html/terms">Terms</a>
-          <a href="/physicalmagnetism.html/gnh-work-statement">Work Statement</a>
-        </div>
-      </div>
-      <div class="subnav">
-        <button class="subnavbtn">About</button>
-        <div class="subnav-content">
-          <a class="cta" href="/physicalmagnetism.html/socials">Socials</a>
-          <a class="cta" href="/physicalmagnetism.html/contact">Contact</a>
-        </div>
-       </div>
-        </nav>
-    <div class="footer-meta">© <span id="y"></span> La Matriz · No trackers.</div>
-  </div>
-</footer>
+    </div>
+
+    <hr>
+    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:0;">
+      <li><a href="/physicalmagnetism.html/">Home</a></li>
+      <li><a href="/physicalmagnetism.html/consulting"> · Consulting</a></li>
+      <li><a href="/physicalmagnetism.html/api"> · API</a></li>
+      <li><a href="/physicalmagnetism.html/thesis"> · Thesis</a></li>
+      <li><a href="/physicalmagnetism.html/privacy"> · Privacy</a></li>
+      <li><a href="/physicalmagnetism.html/terms"> · Terms</a></li>
+      <li><a href="/physicalmagnetism.html/gnh-work-statement"> · Work Statement</a></li>
+      <li><a href="/physicalmagnetism.html/socials"> · Socials</a></li>
+      <li><a href="/physicalmagnetism.html/contact"> · Contact</a></li>
+    </ul>
+    <p class="meta">© <span id="y"></span> Physical Magnetism · No trackers.</p>
+
+  </main>
+</div>
 
 <script>
-  // Mobile nav toggle
-  (function () {
-    const btn = document.getElementById('menuToggle');
-    const nav = document.getElementById('primaryNav');
-    if (!btn || !nav) return;
-    btn.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      btn.setAttribute('aria-expanded', String(open));
-    });
-  }());
-
-  // Year, timezone, CSRF placeholder
   document.getElementById('y').textContent = new Date().getFullYear();
-  document.getElementById('tz').value = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-
-  // Simple math challenge
-  (function () {
-    const a = Math.floor(Math.random()*6)+2;   // 2–7
-    const b = Math.floor(Math.random()*6)+2;   // 2–7
-    const sum = a + b;
-    const label = document.getElementById('captchaLabel');
-    label.textContent = `What is ${a} + ${b}?`;
-    const form = document.getElementById('contact-form');
-    const status = document.getElementById('form-status');
-    const csrf = document.getElementById('csrf');
-    csrf.value = (Math.random().toString(36).slice(2) + Date.now().toString(36));
-    form.addEventListener('submit', (e) => {
-      const hp = form.querySelector('input[name="company"]').value;
-      const ans = document.getElementById('captcha').value.trim();
-      if (hp) { e.preventDefault(); return; } // bot likely
-      if (String(sum) !== ans) {
-        e.preventDefault();
-        status.textContent = 'Please solve the math check to send.';
-        document.getElementById('captcha').focus();
-      }
-    });
-  }());
 </script>
 
 </body>
