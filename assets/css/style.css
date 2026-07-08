@@ -442,3 +442,212 @@ hr.sep { border: 0; height: 1px; background: var(--border); margin: 12px 0; }
     scroll-behavior: auto !important;
   }
 }
+
+/* ==========================================================================
+   7/8/26 PHYSICAL MAGNETISM CONSULTING STYLES
+   ========================================================================== */
+
+.consulting-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header & Logo Integration */
+.consulting-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.consulting-logo {
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.consulting-header h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Workflow Section */
+.workflow-section {
+  margin-bottom: 50px;
+}
+
+.workflow-intro {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.workflow-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.step-card {
+  background: rgba(89, 78, 57, 0.03); /* Subtle tint using your border color */
+  border-left: 3px solid #594E39;
+  padding: 20px;
+  border-radius: 0 4px 4px 0;
+}
+
+.step-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.step-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Tiered Pricing Section */
+.pricing-section {
+  margin: 50px 0;
+}
+
+.pricing-intro {
+  margin-bottom: 30px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.pricing-tier {
+  border: 1px solid #e0dcd3;
+  border-radius: 6px;
+  padding: 25px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Highlighted container for Tier 2 */
+.pricing-tier.featured {
+  border: 2px solid #594E39;
+  box-shadow: 0 4px 12px rgba(89, 78, 57, 0.08);
+}
+
+.tier-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #6d6350;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.pricing-tier h3 {
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+  color: #111;
+  font-weight: bold;
+}
+
+.per-session {
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: #666;
+}
+
+.tier-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.pricing-tier ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto 0 0 0; /* Pushes list to fill spaces evenly */
+  border-top: 1px dashed #e0dcd3;
+  padding-top: 15px;
+}
+
+.pricing-tier li {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 18px;
+  color: #333;
+}
+
+/* Custom organic bullet indicators */
+.pricing-tier li::before {
+  content: "•";
+  color: #594E39;
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+  top: -2px;
+}
+
+.sliding-scale-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Testimonial Feature Section */
+.testimonial-section {
+  background: #faf8f5; /* Clean paper texture tone */
+  border: 1px dashed #594E39;
+  padding: 30px;
+  border-radius: 4px;
+  margin: 50px 0;
+}
+
+.testimonial-section blockquote {
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #222;
+  margin: 0 0 15px 0;
+  padding: 0;
+  border: none;
+}
+
+.testimonial-section cite {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  font-style: normal;
+  color: #594E39;
+  font-size: 0.95rem;
+}
+
+/* Mobile Responsiveness Fine-tuning */
+@media (max-width: 600px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .workflow-steps {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-section {
+    padding: 20px;
+  }
+}
