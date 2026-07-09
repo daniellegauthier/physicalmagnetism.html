@@ -11,14 +11,13 @@
 
 <div class="page-wrap">
 
-  <!-- SIDEBAR NAV -->
   <header>
     <a class="logo" href="/physicalmagnetism.html/">
       <img src="./assets/img/la matriz root only.png" alt="La Matriz logo">
       <span>physicalmagnetism.html</span>
     </a>
     <ul id="primaryNav">
-      <li><a href="/physicalmagnetism.html/">Home</a></li>
+      <li><strong>Home</strong></li>
       <li><a href="/physicalmagnetism.html/consulting">Consulting</a></li>
       <li><a href="/physicalmagnetism.html/api">API</a></li>
       <li><a href="/physicalmagnetism.html/thesis">Thesis</a></li>
@@ -30,79 +29,99 @@
     </ul>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main>
 
     <div class="breadcrumb">
-      <a href="/physicalmagnetism.html/thesis">← Back to Thesis</a>
+      <a href="/physicalmagnetism.html/thesis">← Read the Thesis</a>
       &nbsp;·&nbsp;
-      <a href="/physicalmagnetism.html/api">Forward to API →</a>
+      <a href="/physicalmagnetism.html/api">Explore the API →</a>
     </div>
 
     <h1>Physical Magnetism Consulting</h1>
-    <h3>Bucket sorting intelligence for social cohesion.</h3>
-    <p>Cybernetic feedback systems + human-centered designs for navigation.</p>
+    <h3>Data structures for structural alignment and human systems.</h3>
+    <p>A practice applying graph logic, classification metrics, and thoughtful UI design to help organizations balance their qualitative information pools.</p>
 
     <p>
       <a href="/physicalmagnetism.html/consulting">Explore Services</a>
       &nbsp;·&nbsp;
-      <a href="/physicalmagnetism.html/contact">Contact</a>
+      <a href="/physicalmagnetism.html/contact">Contact Team</a>
     </p>
 
     <hr>
 
-    <h2>Preview a color sequence</h2>
+    <h2>Data Pathways: Story as Algorithm</h2>
+    <p>
+      Every algorithmic classifier is an act of sorting. Conventional computational sorting processes squeeze complex human attributes into linear scales, stripping away valuable context. 
+    </p>
+    <p>
+      Our framework treats human situations as multi-dimensional data nodes. By configuring state changes into deterministic paths—or <strong>traversals</strong>—we show how structures can shift systematically over time. Select a template below to simulate a transition sequence and map its trajectory across our sorting matrices.
+    </p>
 
     <div class="infobox">
-      In a La Matrice sequence:
+      <strong>Matrix Optimization Controls:</strong>
       <ul>
-        <li>Colors move by semantic proximity;</li>
-        <li>Null-time rests insert neutral colors;</li>
-        <li>Mass, voltage, and charge tune the path.</li>
+        <li><strong>Saturation Tuning:</strong> Scales the saturation and vibrance coefficients dynamically across nodes.</li>
+        <li><strong>Path Optimization:</strong> Adjusts structural weight, pushing the path to look for closer relative steps.</li>
+        <li><strong>Node Resistance:</strong> Dictates the friction coefficient when shifting focus between contrasting values.</li>
+        <li><strong>Dynamic Delays:</strong> Dictates structural wait-states, injecting stabilizing neutral checkpoints along the path.</li>
       </ul>
     </div>
 
-    <p>Type a few words (e.g., <i>"tired but hopeful before a hard conversation"</i>).
-    Tune the parameters, then Generate to see the chromatic path.</p>
-
-    <p>
-      <input id="oracle-input" type="text" placeholder="Type your feeling or situation…" style="width:300px">
-      &nbsp;
-      <button id="gen">Generate</button>
-      <button id="exportJson">Export JSON</button>
-      <button id="clear">Clear</button>
+    <p><strong>Step 1: Choose a Traversal Pathway Template</strong><br>
+      <select id="pathway-select" style="width:320px; padding:6px; margin: 8px 0 12px 0;">
+        <option value="">-- Choose a predefined pathway --</option>
+        <option value="brown, gold, orange, pink">curious to thoughtful</option>
+        <option value="red, blue, gold, purple">angry to soft</option>
+        <option value="purple, red, orange">soft to protective</option>
+        <option value="red, brown, grey">intelligent to hesitant</option>
+        <option value="green, grey, nude, red, purple">lost to open</option>
+        <option value="purple, orange, pink">joy to new</option>
+        <option value="pink, nude, orange, purple, red">distrust to thoughtful</option>
+        <option value="purple, pink, yellow, red">happy to resistant</option>
+        <option value="grey, brown, nude">productive to messy</option>
+        <option value="black, red, white">strict to neutral</option>
+        <option value="brown, pink, gold, purple, nude, blue">drain to rise</option>
+        <option value="grey, green, black, yellow">attached to objective</option>
+        <option value="orange, red, yellow, purple, orange">stuck to escape</option>
+        <option value="white, red, green, purple, orange">sad to abundant</option>
+        <option value="yellow, brown, green">cocky to observant</option>
+        <option value="magenta, pink, green, blue, teal">it to self</option>
+        <option value="black, red, green, blue, green, red">toussaint louverture</option>
+      </select>
     </p>
 
     <table>
       <tr>
-        <td><label>Mass &nbsp;<input id="mass" type="range" min="-1" max="1" step="0.05" value="0.15"> <span class="meta" id="massVal">0.15</span></label></td>
+        <td><label>Saturation Tuning &nbsp;<input id="mass" type="range" min="-1" max="1" step="0.05" value="0.15"> <span class="meta" id="massVal">0.15</span></label></td>
         <td>&nbsp;&nbsp;&nbsp;</td>
-        <td><label>Voltage &nbsp;<input id="voltage" type="range" min="0" max="1" step="0.05" value="0.20"> <span class="meta" id="voltageVal">0.20</span></label></td>
+        <td><label>Path Optimization &nbsp;<input id="voltage" type="range" min="0" max="1" step="0.05" value="0.20"> <span class="meta" id="voltageVal">0.20</span></label></td>
         <td>&nbsp;&nbsp;&nbsp;</td>
-        <td><label>Charge &nbsp;<input id="charge" type="range" min="0.1" max="2.0" step="0.05" value="1.45"> <span class="meta" id="chargeVal">1.45</span></label></td>
+        <td><label>Node Resistance &nbsp;<input id="charge" type="range" min="0.1" max="2.0" step="0.05" value="1.45"> <span class="meta" id="chargeVal">1.45</span></label></td>
       </tr>
       <tr>
-        <td><label>Null Time &nbsp;<input id="nulltime" type="range" min="0" max="0.9" step="0.05" value="0.65"> <span class="meta" id="nullVal">0.65</span></label></td>
+        <td><label>Dynamic Delays &nbsp;<input id="nulltime" type="range" min="0" max="0.9" step="0.05" value="0.65"> <span class="meta" id="nullVal">0.65</span></label></td>
         <td>&nbsp;&nbsp;&nbsp;</td>
-        <td><label>Length &nbsp;<input id="length" type="range" min="4" max="32" step="1" value="9"> <span class="meta" id="lenVal">9</span></label></td>
+        <td><label>Path Length Limit &nbsp;<input id="length" type="range" min="4" max="32" step="1" value="9"> <span class="meta" id="lenVal">9</span></label></td>
         <td>&nbsp;&nbsp;&nbsp;</td>
-        <td><label>Seed &nbsp;<input id="seed" type="number" value="999" step="1" min="0" max="99999" style="width:60px"></label></td>
-      </tr>
-      <tr>
-        <td colspan="5"><label>Start Color &nbsp;<input id="startColor" type="text" placeholder="gold" style="width:80px"></label></td>
+        <td><label>Algorithm Seed &nbsp;<input id="seed" type="number" value="999" step="1" min="0" max="99999" style="width:60px"></label></td>
       </tr>
     </table>
 
+    <p style="margin-top:14px;">
+      <button id="gen" style="font-weight:bold;">Compile Traversal Map</button>
+      <button id="exportJson">Export JSON Object</button>
+      <button id="clear">Reset</button>
+    </p>
+
     <div id="sequence" style="margin-top:10px;display:flex;flex-wrap:wrap;gap:3px;" aria-live="polite"></div>
     <pre id="log" class="meta" style="margin-top:8px;"></pre>
-    <p class="meta">This preview is non-diagnostic and runs entirely in your browser. No data is sent.</p>
+    <p class="meta">This configuration system runs client-side inside your browser environment. Data is processed locally and never leaves your local hardware.</p>
 
     <hr>
 
-    <p><i>Guided by meaning, rooted in story, informed by data. A consulting space for poetic data and practical change.</i>
-    &nbsp; <a href="/physicalmagnetism.html/consulting">Confide in me →</a></p>
+    <p><i>Guided by system clarity, structured on narrative patterns, optimized for relational metrics.</i>
+    &nbsp; <a href="/physicalmagnetism.html/consulting">Consult with our team →</a></p>
 
-    <!-- Repeated nav at bottom, JILA style -->
     <hr>
     <ul id="primaryNav" style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:0;">
       <li><a href="/physicalmagnetism.html/">Home</a></li>
@@ -118,12 +137,12 @@
     <p class="meta">© <span id="y"></span> Physical Magnetism</p>
 
   </main>
-</div><!-- end .page-wrap -->
+</div>
 
 <script>
 document.getElementById('y').textContent = new Date().getFullYear();
 
-/* ---------- small helpers ---------- */
+/* ---------- core arithmetic helpers ---------- */
 const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
 function seededGen(seed){ let s = seed>>>0 || 1; return () => (s = (s*1664525 + 1013904223)>>>0) / 4294967296; }
 function rgbToHsv(r,g,b){
@@ -140,14 +159,14 @@ function hsvToRgb(h,s,v){
   else if(h<240)[r,g,b]=[0,x,c]; else if(h<300)[r,g,b]=[x,0,c]; else [r,g,b]=[c,0,x];
   return [Math.round((r+m)*255),Math.round((g+m)*255),Math.round((b+m)*255)];
 }
-function applyMass([r,g,b], mass){
+function applySaturation([r,g,b], satCoeff){
   const [h,s,v]=rgbToHsv(r,g,b);
-  return hsvToRgb(h, clamp(s*(1+0.75*mass),0,1), clamp(v*(1+0.50*mass),0,1));
+  return hsvToRgb(h, clamp(s*(1+0.75*satCoeff),0,1), clamp(v*(1+0.50*satCoeff),0,1));
 }
 function jaccard(a,b){ const A=new Set(a),B=new Set(b); const U=new Set([...A,...B]).size; const I=[...A].filter(x=>B.has(x)).length; return U?I/U:0; }
 function hex(c){ return '#'+c.map(v=>v.toString(16).padStart(2,'0')).join(''); }
 
-/* ---------- 13-color dataset ---------- */
+/* ---------- 13-node array structure ---------- */
 const SEM = [
   {name:'grey',   rgb:[170,170,170], sent:0.50, words:['precary','apposite']},
   {name:'pink',   rgb:[250,0,90],    sent:0.62, words:['ambitious','exquisite']},
@@ -166,95 +185,128 @@ const SEM = [
 const maxAbs = Math.max(...SEM.map(s=>Math.abs(s.sent)));
 SEM.forEach(s=>s.sentN = maxAbs ? (s.sent/maxAbs) : 0);
 
-function similarity(i,j,alpha=0.6){
+function nodeSimilarity(i,j,alpha=0.6){
   const ds = Math.abs(SEM[i].sentN - SEM[j].sentN);
   return alpha*(1-ds) + (1-alpha)*jaccard(SEM[i].words, SEM[j].words);
 }
-function neutralIdx(){
-  const set = new Set(['grey','gray','white','nude','beige']);
-  let idx = SEM.map((c,i)=>set.has(c.name)?i:-1).filter(i=>i>=0);
-  if(!idx.length){ const order=SEM.map((c,i)=>[i,Math.abs(c.sentN)]).sort((a,b)=>a[1]-b[1]).map(x=>x[0]); idx=order.slice(0,5); }
+function fetchNeutrals(){
+  const targetSet = new Set(['grey','gray','white','nude','beige']);
+  let idx = SEM.map((c,i)=>targetSet.has(c.name)?i:-1).filter(i=>i>=0);
+  if(!idx.length){ const ordered=SEM.map((c,i)=>[i,Math.abs(c.sentN)]).sort((a,b)=>a[1]-b[1]).map(x=>x[0]); idx=ordered.slice(0,5); }
   return idx;
 }
-function chooseNext(cur, charge, rng){
-  const sims = SEM.map((_,j)=>similarity(cur,j));
+function computeNextNode(cur, resistance, rng){
+  const sims = SEM.map((_,j)=>nodeSimilarity(cur,j));
   const dist = sims.map(s=>1-Math.max(0,Math.min(1,s)));
-  const attr = dist.map((d,k)=>k===cur?0:charge/Math.max(d,1e-3));
-  const wSum = attr.reduce((a,b)=>a+Math.max(0,b),0);
+  const matrixWeight = dist.map((d,k)=>k===cur?0:resistance/Math.max(d,1e-3));
+  const wSum = matrixWeight.reduce((a,b)=>a+Math.max(0,b),0);
   if(wSum===0) return Math.floor(rng()*SEM.length);
   let r = rng()*wSum;
-  for(let j=0;j<attr.length;j++){ r-=Math.max(0,attr[j]); if(r<=0) return j; }
+  for(let j=0;j<matrixWeight.length;j++){ r-=Math.max(0,matrixWeight[j]); if(r<=0) return j; }
   return SEM.length-1;
 }
-function generate({length=11,seed=7,mass=0.15,voltage=0.2,charge=1.45,nullTime=0.65,startColor=''}={}){
+
+function generateSequence({length=11, seed=7, satCoeff=0.15, optimization=0.2, resistance=1.45, delayCoeff=0.65, colorArray=null}={}){
   const rng = seededGen(seed);
-  let start = SEM.findIndex(c=>c.name===String(startColor).trim().toLowerCase());
-  if(start<0) start = SEM.map((c,i)=>[i,Math.abs(c.sentN)]).sort((a,b)=>a[1]-b[1])[0][0];
-  const neutrals = neutralIdx();
-  const seq = []; let cur = start;
-  for(let t=0;t<length;t++){
-    const row = SEM[cur];
-    seq.push({t, name:row.name, base_rgb:row.rgb.slice(), rgb:applyMass(row.rgb,mass), sentiment:row.sent, words:row.words});
-    const pRest = nullTime*(1-Math.abs(row.sentN));
-    if(rng()<pRest){
-      const ni=neutrals[Math.floor(rng()*neutrals.length)]; const nrow=SEM[ni];
-      seq.push({t:t+0.5, name:nrow.name, base_rgb:nrow.rgb.slice(), rgb:applyMass(nrow.rgb,mass*0.2), sentiment:nrow.sent, words:nrow.words, rest:true});
+  const neutrals = fetchNeutrals();
+  const sequenceOut = [];
+  
+  if (colorArray && colorArray.length > 0) {
+    // Deterministic Traversal Path Mapping
+    for(let t=0; t<colorArray.length; t++) {
+      let targetName = colorArray[t].trim().toLowerCase();
+      let foundIdx = SEM.findIndex(c => c.name === targetName);
+      if(foundIdx < 0) continue; 
+      
+      const row = SEM[foundIdx];
+      sequenceOut.push({t, name:row.name, base_rgb:row.rgb.slice(), rgb:applySaturation(row.rgb, satCoeff), sentiment:row.sent, words:row.words});
+      
+      const delayProbability = delayCoeff * (1 - Math.abs(row.sentN));
+      if(rng() < delayProbability){
+        const ni = neutrals[Math.floor(rng() * neutrals.length)]; 
+        const nrow = SEM[ni];
+        sequenceOut.push({t:t+0.5, name:nrow.name, base_rgb:nrow.rgb.slice(), rgb:applySaturation(nrow.rgb, satCoeff*0.2), sentiment:nrow.sent, words:nrow.words, rest:true});
+      }
     }
-    cur = chooseNext(cur, charge*(1+0.4*voltage), rng);
+  } else {
+    // Fallback Dynamic Engine Path Calculation
+    let cur = SEM.map((c,i)=>[i,Math.abs(c.sentN)]).sort((a,b)=>a[1]-b[1])[0][0];
+    for(let t=0; t<length; t++){
+      const row = SEM[cur];
+      sequenceOut.push({t, name:row.name, base_rgb:row.rgb.slice(), rgb:applySaturation(row.rgb, satCoeff), sentiment:row.sent, words:row.words});
+      const delayProbability = delayCoeff * (1 - Math.abs(row.sentN));
+      if(rng() < delayProbability){
+        const ni = neutrals[Math.floor(rng() * neutrals.length)]; 
+        const nrow = SEM[ni];
+        sequenceOut.push({t:t+0.5, name:nrow.name, base_rgb:nrow.rgb.slice(), rgb:applySaturation(nrow.rgb, satCoeff*0.2), sentiment:nrow.sent, words:nrow.words, rest:true});
+      }
+      cur = computeNextNode(cur, resistance * (1 + 0.4 * optimization), rng);
+    }
   }
-  return seq;
+  return sequenceOut;
 }
 
-/* ---------- UI ---------- */
+/* ---------- UI Event Wiring ---------- */
 const el = id => document.getElementById(id);
 const seqEl=el('sequence'), logEl=el('log');
 const mass=el('mass'), voltage=el('voltage'), charge=el('charge'), nulltime=el('nulltime'),
-      len=el('length'), seed=el('seed'), startColor=el('startColor'), input=el('oracle-input');
+      len=el('length'), seed=el('seed'), pathwaySelect=el('pathway-select');
 
-function syncVals(){
+function syncControlLabels(){
   el('massVal').textContent=Number(mass.value).toFixed(2);
   el('voltageVal').textContent=Number(voltage.value).toFixed(2);
   el('chargeVal').textContent=Number(charge.value).toFixed(2);
   el('nullVal').textContent=Number(nulltime.value).toFixed(2);
   el('lenVal').textContent=String(len.value);
 }
-['input','change'].forEach(evt=>[mass,voltage,charge,nulltime,len].forEach(c=>c.addEventListener(evt,syncVals)));
-syncVals();
+['input','change'].forEach(evt=>[mass,voltage,charge,nulltime,len].forEach(c=>c.addEventListener(evt,syncControlLabels)));
+syncControlLabels();
 
-let lastSeq = null;
-function render(seq){
-  lastSeq = seq;
+let activeSequence = null;
+function renderOutput(seq){
+  activeSequence = seq;
   seqEl.innerHTML = '';
   seq.forEach((s,i)=>{
     const cell = document.createElement('div');
     cell.style.cssText = `width:44px;height:44px;border:1px solid #594E39;background:${hex(s.rgb)};display:flex;align-items:flex-end;padding:2px;flex-shrink:0;`;
-    cell.title = `${i+1} — ${s.name}${s.rest?' (rest)':''} — ${hex(s.rgb)}`;
+    cell.title = `${i+1} — ${s.name}${s.rest?' (delay focus)':''} — ${hex(s.rgb)}`;
     const cap = document.createElement('span');
     cap.textContent = `${i+1}`;
     cap.style.cssText = 'font-size:9px;font-family:monospace;color:rgba(255,255,255,0.75);mix-blend-mode:difference;';
     cell.appendChild(cap);
     seqEl.appendChild(cell);
   });
-  logEl.textContent = seq.slice(0,20).map((s,i)=>`${String(i).padStart(2,'0')} — ${s.name}${s.rest?' (rest)':''}   ${hex(s.rgb)}`).join('\n');
+  logEl.textContent = seq.map((s,i)=>`${String(i).padStart(2,'0')} — ${s.name.padEnd(8)}${s.rest?' (dynamic delay)':''.padEnd(15)}   ${hex(s.rgb)}`).join('\n');
 }
 
-function run(){
-  const seedFromText = txt => { let h=2166136261>>>0; for(let i=0;i<txt.length;i++){ h^=txt.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; };
-  const seedVal = String(seed.value||'').trim().length ? Number(seed.value) : seedFromText(input.value||'');
-  render(generate({length:Number(len.value), seed:seedVal, mass:Number(mass.value), voltage:Number(voltage.value), charge:Number(charge.value), nullTime:Number(nulltime.value), startColor:startColor.value||''}));
+function processTraversal(){
+  const currentSelection = pathwaySelect.value;
+  let explicitColorArray = null;
+  if(currentSelection) {
+    explicitColorArray = currentSelection.split(',');
+  }
+  
+  renderOutput(generateSequence({
+    length: Number(len.value), 
+    seed: Number(seed.value || 999), 
+    satCoeff: Number(mass.value), 
+    optimization: Number(voltage.value), 
+    resistance: Number(charge.value), 
+    delayCoeff: Number(nulltime.value),
+    colorArray: explicitColorArray
+  }));
 }
 
-el('gen').addEventListener('click', run);
-input.addEventListener('keydown', e=>{ if(e.key==='Enter') run(); });
-el('clear').addEventListener('click', ()=>{ seqEl.innerHTML=''; logEl.textContent=''; input.value=''; lastSeq=null; });
+el('gen').addEventListener('click', processTraversal);
+el('clear').addEventListener('click', ()=>{ seqEl.innerHTML=''; logEl.textContent=''; pathwaySelect.value=''; activeSequence=null; });
 el('exportJson').addEventListener('click', ()=>{
-  if(!lastSeq){ logEl.textContent='Generate a sequence first.'; return; }
-  const s = JSON.stringify({version:1, engine:'magnetism-to-color(js)', sequence:lastSeq}, null, 2);
-  navigator.clipboard?.writeText(s).catch(()=>{});
-  const blob=new Blob([s],{type:'application/json'}); const url=URL.createObjectURL(blob);
-  const a=document.createElement('a'); a.href=url; a.download='lamatriz_sequence.json';
+  if(!activeSequence){ logEl.textContent='Compile a path sequence configuration first.'; return; }
+  const payload = JSON.stringify({version:2, architecture:'deterministic-traversal-map', sequence:activeSequence}, null, 2);
+  navigator.clipboard?.writeText(payload).catch(()=>{});
+  const blob=new Blob([payload],{type:'application/json'}); const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.href=url; a.download='traversal_matrix_sequence.json';
   document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-  logEl.textContent='Exported JSON (copied to clipboard + downloaded).';
+  logEl.textContent='JSON schema copied to system clipboard and downloaded successfully.';
 });
 </script>
 
