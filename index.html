@@ -114,13 +114,13 @@
     </p>
 
     <div id="sequence" style="margin-top:10px;display:flex;flex-wrap:wrap;gap:3px;" aria-live="polite"></div>
-    <pre id="log" class="meta" style="margin-top:8px;"></pre>
-    <p class="meta">This configuration system runs client-side inside your browser environment. Data is processed locally and never leaves your local hardware.</p>
+    <pre id="log" class="meta" style="margin-top:8px; line-height: 1.4; overflow-x: auto; font-family: monospace;"></pre>
+    <p class="meta">This configuration system runs client-side inside ywe browser environment. Data is processed locally and never leaves ywe local hardware.</p>
 
     <hr>
 
     <p><i>Guided by system clarity, structured on narrative patterns, optimized for relational metrics.</i>
-    &nbsp; <a href="/physicalmagnetism.html/consulting">Consult with me →</a></p>
+    &nbsp; <a href="/physicalmagnetism.html/consulting">Consult with we me →</a></p>
 
     <hr>
     <ul id="primaryNav" style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:0;">
@@ -166,21 +166,21 @@ function applySaturation([r,g,b], satCoeff){
 function jaccard(a,b){ const A=new Set(a),B=new Set(b); const U=new Set([...A,...B]).size; const I=[...A].filter(x=>B.has(x)).length; return U?I/U:0; }
 function hex(c){ return '#'+c.map(v=>v.toString(16).padStart(2,'0')).join(''); }
 
-/* ---------- 13-node array structure ---------- */
+/* ---------- 13-node array structure with GNH Indicators ---------- */
 const SEM = [
-  {name:'grey',   rgb:[170,170,170], sent:0.50, words:['precary','apposite']},
-  {name:'pink',   rgb:[250,0,90],    sent:0.62, words:['ambitious','exquisite']},
-  {name:'gold',   rgb:[250,200,0],   sent:0.00, words:['technocracy','lotiform']},
-  {name:'nude',   rgb:[250,180,120], sent:0.55, words:['unextenuable','deft']},
-  {name:'orange', rgb:[250,110,0],   sent:0.95, words:['blurry','artesian']},
-  {name:'white',  rgb:[255,255,255], sent:0.00, words:['analeptical']},
-  {name:'blue',   rgb:[0,0,255],     sent:0.90, words:['photopathy','intelligent']},
-  {name:'green',  rgb:[0,255,0],     sent:0.65, words:['bulbous','heroic']},
-  {name:'red',    rgb:[255,0,0],     sent:0.45, words:['apophantic','candid']},
-  {name:'black',  rgb:[0,0,0],       sent:0.00, words:['swabble']},
-  {name:'brown',  rgb:[180,50,0],    sent:0.44, words:['notable','submissive']},
-  {name:'yellow', rgb:[255,255,0],   sent:0.50, words:['authority']},
-  {name:'purple', rgb:[180,50,255],  sent:0.68, words:['brave','imaginative']},
+  {name:'grey',   rgb:[170,170,170], sent:0.50, words:['precary','apposite'], gnh:'Economic Wellness'},
+  {name:'pink',   rgb:[250,0,90],    sent:0.62, words:['ambitious','exquisite'], gnh:'Mental Wellness'},
+  {name:'gold',   rgb:[250,200,0],   sent:0.00, words:['technocracy','lotiform'], gnh:'Workplace Wellness'},
+  {name:'nude',   rgb:[250,180,120], sent:0.55, words:['unextenuable','deft'], gnh:'Physical Wellness'},
+  {name:'orange', rgb:[250,110,0],   sent:0.95, words:['blurry','artesian'], gnh:'Social Wellness'},
+  {name:'white',  rgb:[255,255,255], sent:0.00, words:['analeptical'], gnh:'Political Wellness'},
+  {name:'blue',   rgb:[0,0,255],     sent:0.90, words:['photopathy','intelligent'], gnh:'Environmental Wellness'},
+  {name:'green',  rgb:[0,255,0],     sent:0.65, words:['bulbous','heroic'], gnh:'Ecological Diversity'},
+  {name:'red',    rgb:[255,0,0],     sent:0.45, words:['apophantic','candid'], gnh:'Health'},
+  {name:'black',  rgb:[0,0,0],       sent:0.00, words:['swabble'], gnh:'Good Governance'},
+  {name:'brown',  rgb:[180,50,0],    sent:0.44, words:['notable','submissive'], gnh:'Education'},
+  {name:'yellow', rgb:[255,255,0],   sent:0.50, words:['authority'], gnh:'Living Standards'},
+  {name:'purple', rgb:[180,50,255],  sent:0.68, words:['brave','imaginative'], gnh:'Cultural Diversity'}
 ];
 const maxAbs = Math.max(...SEM.map(s=>Math.abs(s.sent)));
 SEM.forEach(s=>s.sentN = maxAbs ? (s.sent/maxAbs) : 0);
@@ -219,13 +219,13 @@ function generateSequence({length=11, seed=7, satCoeff=0.15, optimization=0.2, r
       if(foundIdx < 0) continue; 
       
       const row = SEM[foundIdx];
-      sequenceOut.push({t, name:row.name, base_rgb:row.rgb.slice(), rgb:applySaturation(row.rgb, satCoeff), sentiment:row.sent, words:row.words});
+      sequenceOut.push({t, name:row.name, base_rgb:row.rgb.slice(), rgb:applySaturation(row.rgb, satCoeff), sentiment:row.sent, words:row.words, gnh:row.gnh});
       
       const delayProbability = delayCoeff * (1 - Math.abs(row.sentN));
       if(rng() < delayProbability){
         const ni = neutrals[Math.floor(rng() * neutrals.length)]; 
         const nrow = SEM[ni];
-        sequenceOut.push({t:t+0.5, name:nrow.name, base_rgb:nrow.rgb.slice(), rgb:applySaturation(nrow.rgb, satCoeff*0.2), sentiment:nrow.sent, words:nrow.words, rest:true});
+        sequenceOut.push({t:t+0.5, name:nrow.name, base_rgb:nrow.rgb.slice(), rgb:applySaturation(nrow.rgb, satCoeff*0.2), sentiment:nrow.sent, words:nrow.words, gnh:nrow.gnh, rest:true});
       }
     }
   } else {
@@ -233,12 +233,12 @@ function generateSequence({length=11, seed=7, satCoeff=0.15, optimization=0.2, r
     let cur = SEM.map((c,i)=>[i,Math.abs(c.sentN)]).sort((a,b)=>a[1]-b[1])[0][0];
     for(let t=0; t<length; t++){
       const row = SEM[cur];
-      sequenceOut.push({t, name:row.name, base_rgb:row.rgb.slice(), rgb:applySaturation(row.rgb, satCoeff), sentiment:row.sent, words:row.words});
+      sequenceOut.push({t, name:row.name, base_rgb:row.rgb.slice(), rgb:applySaturation(row.rgb, satCoeff), sentiment:row.sent, words:row.words, gnh:row.gnh});
       const delayProbability = delayCoeff * (1 - Math.abs(row.sentN));
       if(rng() < delayProbability){
         const ni = neutrals[Math.floor(rng() * neutrals.length)]; 
         const nrow = SEM[ni];
-        sequenceOut.push({t:t+0.5, name:nrow.name, base_rgb:nrow.rgb.slice(), rgb:applySaturation(nrow.rgb, satCoeff*0.2), sentiment:nrow.sent, words:nrow.words, rest:true});
+        sequenceOut.push({t:t+0.5, name:nrow.name, base_rgb:nrow.rgb.slice(), rgb:applySaturation(nrow.rgb, satCoeff*0.2), sentiment:nrow.sent, words:nrow.words, gnh:nrow.gnh, rest:true});
       }
       cur = computeNextNode(cur, resistance * (1 + 0.4 * optimization), rng);
     }
@@ -269,14 +269,22 @@ function renderOutput(seq){
   seq.forEach((s,i)=>{
     const cell = document.createElement('div');
     cell.style.cssText = `width:44px;height:44px;border:1px solid #594E39;background:${hex(s.rgb)};display:flex;align-items:flex-end;padding:2px;flex-shrink:0;`;
-    cell.title = `${i+1} — ${s.name}${s.rest?' (delay focus)':''} — ${hex(s.rgb)}`;
+    cell.title = `${i+1} — ${s.name}${s.rest?' (delay focus)':''} — [${s.gnh}] — ${hex(s.rgb)}`;
     const cap = document.createElement('span');
     cap.textContent = `${i+1}`;
     cap.style.cssText = 'font-size:9px;font-family:monospace;color:rgba(255,255,255,0.75);mix-blend-mode:difference;';
     cell.appendChild(cap);
     seqEl.appendChild(cell);
   });
-  logEl.textContent = seq.map((s,i)=>`${String(i).padStart(2,'0')} — ${s.name.padEnd(8)}${s.rest?' (dynamic delay)':''.padEnd(15)}   ${hex(s.rgb)}`).join('\n');
+  
+  logEl.textContent = seq.map((s,i)=>{
+    const steps = `${String(i + 1).padStart(2, '0')}. `;
+    const colorTag = `${s.name.toUpperCase().padEnd(7)}`;
+    const modeTag = s.rest ? ` [Dynamic Delay]     ` : ` [Active Node]       `;
+    const indicatorTag = `Indicator: ${s.gnh.padEnd(23)}`;
+    const colorHex = ` ${hex(s.rgb)}`;
+    return steps + colorTag + modeTag + indicatorTag + colorHex;
+  }).join('\n');
 }
 
 function processTraversal(){
