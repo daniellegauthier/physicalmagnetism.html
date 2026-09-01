@@ -1,381 +1,428 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Thesis — Physical Magnetism: Semantic Color Math</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Semantic Color Math for emotional-AI alignment. A thesis on color as sovereign data: ritual computation, circular economies, and trauma-informed design.">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta property="og:title" content="Physical Magnetism Thesis — Semantic Color Math">
-  <meta property="og:description" content="A ritual economy for AI: color as interface between inner knowing and outer data.">
-  <link rel="canonical" href="https://daniellegauthier.github.io/physicalmagnetism.html/thesis">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ScholarlyArticle",
-    "headline":"Semantic Color Math: Toward Emotional-AI Alignment",
-    "author":{"@type":"Person","name":"Physical Magnetism Consulting"},
-    "about":["Affective Computing","Color Semantics","LLM Alignment","Trauma-Informed Design","Decolonial AI"],
-    "isAccessibleForFree": true
-  }
-  </script>
+<meta charset="utf-8">
+<title>Thesis — Physical Magnetism: Semantic Color Math</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Semantic Color Math for emotional-AI alignment. Nuance over precision: quaternion color geometry, hidden-state sequence models, and honest limits.">
+<link rel="preload" href="./assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<meta property="og:title" content="Physical Magnetism Thesis — Semantic Color Math">
+<meta property="og:description" content="Nuance over precision: quaternion color geometry and hidden-state sequence models for La Matrice.">
+<meta property="og:image" content="https://lamatriz.ai/og.png">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="canonical" href="https://lamatriz.ai/thesis">
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"ScholarlyArticle",
+"headline":"Semantic Color Math: Nuance Over Precision in Quaternion Color Geometry",
+"author":{"@type":"Person","name":"Danielle Gauthier / Physical Magnetism Consulting"},
+"about":["Affective Computing","Color Semantics","Quaternion Geometry","LLM Alignment","Data Feminism"],
+"url":"https://lamatriz.ai/thesis",
+"license":"https://creativecommons.org/licenses/by-nc-sa/4.0/",
+"isAccessibleForFree": true
+}
+</script>
 </head>
 <body>
-
-<div class="page-wrap">
-
-  <!-- SIDEBAR NAV -->
-  <header>
-    <a class="logo" href="/physicalmagnetism.html/">
-      <img src="./assets/img/la matriz root only.png" alt="La Matriz logo">
-      <span>physicalmagnetism.html</span>
-    </a>
-    <ul id="primaryNav">
-      <li><a href="/physicalmagnetism.html/">Home</a></li>
-      <li><a href="/physicalmagnetism.html/consulting">Consulting</a></li>
-      <li><a href="/physicalmagnetism.html/api">API</a></li>
-      <li><strong>Thesis</strong></li>
-      <li><a href="/physicalmagnetism.html/privacy">Privacy</a></li>
-      <li><a href="/physicalmagnetism.html/terms">Terms</a></li>
-      <li><a href="/physicalmagnetism.html/gnh-work-statement">Work Statement</a></li>
-      <li><a href="/physicalmagnetism.html/socials">Socials</a></li>
-      <li><a href="/physicalmagnetism.html/contact">Contact</a></li>
-    </ul>
-    <br>
-    <ul style="list-style:none;margin:0;padding:0;font-size:13px;">
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#method">Method</a></li>
-      <li><a href="#sentiment-color">Sentiment × Color</a></li>
-      <li><a href="#tree">Decision Tree</a></li>
-      <li><a href="#concept-space">Concept Space</a></li>
-      <li><a href="#variance">RGB Variance</a></li>
-      <li><a href="#pathways">Pathways (11)</a></li>
-      <li><a href="#loop-filter">Loop Filter</a></li>
-      <li><a href="#core-hypothesis">Core Hypothesis</a></li>
-      <li><a href="#literature-review">Literature Review</a></li>
-      <li><a href="#evaluation">Evaluation</a></li>
-      <li><a href="#what-is">What Is PM?</a></li>
-      <li><a href="#soulcoin">SoulCoin</a></li>
-      <li><a href="#influences">Influences</a></li>
-      <li><a href="#questions">Reader Questions</a></li>
-    </ul>
-  </header>
-
-  <!-- MAIN CONTENT -->
-  <main>
-
-    <div class="breadcrumb">
-      <a href="/physicalmagnetism.html/">← Home</a>
-      &nbsp;·&nbsp;
-      <a href="/physicalmagnetism.html/consulting">Consulting</a>
-      &nbsp;·&nbsp;
-      <a href="/physicalmagnetism.html/api">API →</a>
-    </div>
-
-    <h1 id="top">Semantic Color Math: A Ritual Economy for AI</h1>
-
-    <p>Color as interface between inner knowing and outer data. A method that refuses surveillance for sovereignty, and trades extraction for relation.</p>
-
-    <p>
-      <a href="#pathways">Find a Pathway</a>
-      &nbsp;·&nbsp;
-      <a href="#core-hypothesis">Jump to Core Hypothesis</a>
-    </p>
-
-    <p class="meta">Matriz sequences invite choice over compliance — 11 pathways, many trajectories. Not an answer, a mirror.</p>
-
-    <hr>
-
-    <h2 id="introduction">Thesis Introduction</h2>
-
-    <p>In an age where mental health systems like the DSM-V increasingly pathologize behavior, human suffering is reduced to risk metrics — stripped from the historical and emotional ecosystems in which it arises. Our data and mental health systems often surveil rather than understand, treating distress as deviation or consumable opportunity, rather than signal of social rupture.</p>
-
-    <hr>
-
-    <h2 id="method">Method: Semantic Color Math</h2>
-
-    <p>This thesis proposes Semantic Color Math not merely as a tool but as correction — mapping sentimental nuance into computational syntax while preserving sacred tensions: unreason, ambiguity, symbolic resonance. A co-expressive system drawing from deep ecology, degrowth, and ancestral epistemologies to confront the colonial inheritance of machine logic. Unlike extractive GPTs, the tools create free-choice maps of symbolic resonance, inviting co-authorship of conclusions.</p>
-
-    <p>Color becomes a cultivated interface between inner knowing and outer data. Through meditative intimacy with color mathematics, practice becomes sovereign rather than surveillant — an algorithm of self-relationship traversing symptom, symbol, and sacred. The sequence is not the outcome; the trajectories are.</p>
-
-    <p>Originally an HTML landing, Physical Magnetism plots a menu of 11 sequences to invite choice over immediacy. Updating the abstract (sentiments via NLTK in Python) did not alter the felt integrity because the material (mathematical) components remained consistent.</p>
-
-    <p>Rather than replicate flawed datasets, the system divines from a folding dataset — between rainbowed symbol and sentiment — to enable learning and unlearning through desired mathematical effects.</p>
-
-    <hr>
-
-    <h2 id="sentiment-color">Sentiment Score Distributions by Closest Color</h2>
-
-    <p>I grouped every point by the color it sits closest to in RGB space, then looked at how the feeling scores spread. Each color forms its own "emotional fingerprint."</p>
-
-    <table>
-      <tr>
-        <td style="padding-right:16px;vertical-align:top;">
-          <img src="./assets/img/sentiment distribution.png"
-               alt="Density curves of sentiment scores grouped by closest color"
-               style="width:100%;max-width:560px;border:1px solid #594E39;">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p class="meta">Notice the tight spike for <em>yellow</em> (narrow band of feeling) versus wider spreads for <em>blue</em> and <em>green</em>. This hints at subtle, measurable links between color and sentiment — useful for choosing which hues to nudge when guiding mood.</p>
-        </td>
-      </tr>
-    </table>
-
-    <hr>
-
-    <h2 id="tree">Decision Tree — RGB → Sentiment (MSE)</h2>
-
-    <p>This regression tree illustrates how color channels (R,G,B) partition the dataset to minimize mean-squared error (MSE) of a continuous sentiment score. Impurity at each node is the sample's MSE; splits are chosen to <em>reduce</em> it.</p>
-
-    <table>
-      <tr>
-        <td>
-          <img src="./assets/img/rgb decision tree.PNG"
-               alt="Decision tree showing splits on B, G, R with squared_error at nodes"
-               style="width:100%;max-width:560px;border:1px solid #594E39;">
-          <p class="meta">Decision Tree trained on synthetic RGB→sentiment data; darker nodes indicate higher predicted sentiment. MSE is used as the split criterion.</p>
-        </td>
-      </tr>
-    </table>
-
-    <div class="infobox">
-      <b>Why MSE?</b><br>
-      MSE penalizes large errors more than small ones, stabilizing the model against outliers and encouraging smooth partitions in color space.<br>
-      <code>MSE = (1/n) &middot; &Sigma;&iota; (y&iota; &minus; &ycirc;&iota;)&sup2;</code>
-      <ul>
-        <li>Lower MSE at a node &rArr; better fit for that subset.</li>
-        <li>Splits like <code>B &le; 125</code> or <code>R &le; 175</code> reflect stable bends between anchors in concept space.</li>
-      </ul>
-    </div>
-
-    <hr>
-
-    <h2 id="concept-space">Concept Space with RGB Coloring &amp; Anchor Vectors</h2>
-
-    <table>
-      <tr>
-        <td>
-          <img src="./assets/img/concept space with rgb coloring and anchor vectors.png"
-               alt="3D plot of points colored by RGB with vectors to time, space, and light anchors"
-               style="width:100%;max-width:560px;border:1px solid #594E39;">
-          <p class="meta">Points are colored by RGB and projected in a 3-anchor semantic cube (time, space, light). Thin gray vectors connect each point to the anchors.</p>
-        </td>
-      </tr>
-    </table>
-
-    <p>What the plot reveals:</p>
-    <ul>
-      <li><b>Cluster near the upper corner:</b> many points sit high on all three anchors at once — motion is subtle and often <em>curved</em>, not linear.</li>
-      <li><b>Short gray lines:</b> small displacements from anchors; small RGB changes create consistent bends.</li>
-      <li><b>RGB edges:</b> reds lean toward one face (away from space/light axes); greens pull away from the time/light side; blues pull away from time/space.</li>
-    </ul>
-
-    <p>When the semantic similarity gets lower as the word gets higher, that represents the sentiment of the word geometrically. The geometry shows that increasing one color channel moves the point away from the pure-concept axes — a Penrose-style curvature away from origin.</p>
-
-    <hr>
-
-    <h2 id="variance">Per-sequence RGB range &amp; variance</h2>
-
-    <p>Range tells us how far a sequence can travel in each color channel; variance tells us how much it actually <em>moves</em>. Big ranges/variances = exploratory journeys. Small ones = focused, almost monochrome rituals.</p>
-
-    <table>
-      <tr>
-        <td>
-          <img src="./assets/img/variance sequences.jpg"
-               alt="Table showing RGB range and variance per pathway and overall"
-               style="width:100%;max-width:560px;border:1px solid #594E39;">
-          <p class="meta"><em>knot</em> and <em>masc</em> roam across the full spectrum; <em>pain</em> and <em>practical</em> stay tight and minimal. These stats help pick a pathway: do we need breadth (exploration) or focus (precision)?</p>
-        </td>
-      </tr>
-    </table>
-
-    <hr>
-
-    <h2 id="pathways">Pathways (11)</h2>
-
-    <p>Each pathway is a repeatable <em>trajectory</em> through color space. Color chips, images, and summaries below.</p>
-
-    <div id="pathwaysGrid"></div>
-
-    <hr>
-
-    <h2 id="loop-filter">Loop Filter — kept vs. filtered</h2>
-
-    <p>Imagine tracing your walk with a marker. A <em>loop</em> is where your path curves back near where you started. Some loops are meaningful (a real circle of feeling). Others are tiny stubs caused by noise. The plots below help us tell them apart so only the good circles remain.</p>
-
-    <table>
-      <tr>
-        <td style="padding-right:12px;">
-          <img src="./assets/img/filtered UMAP for loops.png"
-               alt="UMAP plot showing kept loops (black circles) and filtered stubs (grey Xs)"
-               style="width:100%;max-width:340px;border:1px solid #594E39;">
-          <p class="meta">Black-circled points mark loops we keep; grey Xs are "stubby" loops filtered as likely false positives.</p>
-        </td>
-        <td>
-          <img src="./assets/img/UMAP update.png"
-               alt="UMAP paths colored by sequence with potential loop markers"
-               style="width:100%;max-width:340px;border:1px solid #594E39;">
-          <p class="meta">Colored paths show each pathway's motion in UMAP space. Circles highlight potential loops to examine with care practices rather than only stats.</p>
-        </td>
-      </tr>
-    </table>
-
-    <hr>
-
-    <h2 id="core-hypothesis">Core Hypothesis</h2>
-
-    <p>Assessed via BLEU, ROUGE, GPTEval, and qualitative rubrics from trauma studies, narrative therapy, and spiritual computing.</p>
-
-    <ul>
-      <li><b>Clarity</b> — Metaphorical grounding for ambiguous emotional queries.</li>
-      <li><b>Creativity</b> — Unexpected, affect-rich symbolic resonance.</li>
-      <li><b>Relevance</b> — Alignment with the user's emotional and ancestral arc.</li>
-    </ul>
-
-    <hr>
-
-    <h2 id="literature-review">Literature Review</h2>
-
-    <p>Currently under review with Northwestern University MS Data Science/AI Academic Innovation Research Consultation.</p>
-
-    <p><a href="https://github.com/daniellegauthier/reading_list">Reading List of PDFs — Morphological grounding.</a></p>
-
-    <h3>Transdisciplinary Context</h3>
-
-    <p>Risky behavior is framed as individual failure. Parents are expected to emotionally support their children with full financial obligations, with 46% of all new income from global economic growth since 1980 going to the richest 5%. We never catch up in our rest banks once we make it past childhood because care is an unrewarded commodity.</p>
-
-    <p>Deficit narratives sell. People would rather engage with what they know and like. We need designs that teach, rather than simply label.</p>
-
-    <p>People repeat lines as expected instead of creating genuine feedback. Even the people with the most power aren't free in their bodies. My family has achieved social mobility to the top 1% through immigration from Hispañola with education.</p>
-
-    <p>We are so constricted in our decisions with current social striations that our news is beginning to show wilder stories every day. Instead of teaching healthy decisions, current algorithms replicate all of our behaviors. Social stigmas are embedded in design from sourcing our histories.</p>
-
-    <p>Bucket sorting offers a linear model for time. We sort based on attracting what we like, and not what we learn from. Sorting allows for data intimacy.</p>
-
-    <p>Deterministic models of story forms that shape healing can preconfigure a pathway when data is missing using apophenia. Once the physical momentum is determined through one conformal metaphor, it is preserved through changed variables in the same category of sentiment, as determined by color. This is expressed through the significance of colors in the sorting of sentiment; word similarity of color vector to word vector is a significant correlation.</p>
-
-    <p>Just like spaces prescribe how we exist within them, contexts in stories carry when data variables change. Different cultures are partial to different story maps. Color sorting with story forms allows for transversal over a spatial map of sentiment to verify message with meaning.</p>
-
-    <p>Mobility through structural boundaries becomes unleashed. By creating intimacy with data, learning becomes more playful and comfortable. Sorting with 13 colors applies faith to action.</p>
-
-    <p>Self embrace from nullifying harm by enforcing consent is the way we swim in water. We feel our own selves when we touch the atmosphere, so we intuitively learn how to balance the connection with external harmony. Emitting and interpreting echoes, like a whale's echolocation, can help with navigational sensing.</p>
-
-    <p>Subjectivity is always contained in objectivity because subjects can never be removed from their objects. All color interpretations are valid, and meaningful. There is a circular gradient of meaning for complimentary opposites.</p>
-
-    <p>Sorting with 13 colors rejects the null hypothesis. By removing precision on labels, access becomes inclusive. Our perspectives become revealed by our choices in labeling, rather than projecting forward.</p>
-
-    <p>Data intimacy through play with color bucket sorting can increase access to care. I dedicate and offer this work to stewards of land and body safety. A prayer for co-liberation.</p>
-
-    <h3>Sources</h3>
-
-    <ul>
-      <li>Benjamin, Ruha. 2019. <em>Race after Technology: Abolitionist Tools for the New Jim Code.</em> Polity.</li>
-      <li>Boyd, Danah. 2014. <em>It's Complicated: The Social Lives of Networked Teens.</em> Yale University Press.</li>
-      <li>Christian, Brian, and Tom Griffiths. 2016. <em>Algorithms to Live by.</em> Henry Holt And Company.</li>
-      <li>Costanza-Chock, Sasha. 2020. <em>Design Justice.</em> MIT Press.</li>
-      <li>Danah Zohar. 1989. <em>The Quantum Self.</em> Bloomsbury.</li>
-      <li>Federici, Silvia. 2004. <em>Caliban and the Witch.</em> Autonomedia.</li>
-      <li>Hickel, Jason. 2020. <em>Less Is More.</em> Penguin Random House.</li>
-      <li>Karin Amimoto Ingersoll. 2016. <em>Waves of Knowing: A Seascape Epistemology.</em> Duke University Press.</li>
-      <li>Klein, Lauren F, and Catherine D'Ignazio. 2020. <em>Data Feminism.</em> MIT Press.</li>
-      <li>Noble, Safiya Umoja. 2018. <em>Algorithms of Oppression.</em> New York University Press.</li>
-      <li>Zuckerman, Ethan. 2013. <em>Digital Cosmopolitans.</em> W. W. Norton &amp; Company.</li>
-    </ul>
-
-    <hr>
-
-    <h2 id="evaluation">Evaluation Framework</h2>
-
-    <p>I will compare parallel prompts — raw vs. Matriz-mapped — and evaluate outputs across automated metrics and human resonance rubrics. The study situates itself within ritualized, trauma-informed, circular AI practice that honors Gross National Happiness (GNH) over GDP.</p>
-
-    <hr>
-
-    <h2 id="what-is">What Is Physical Magnetism?</h2>
-
-    <p><em>It is not a metaphor.<br>
-    It is a co-ex system, a pluriversal site of interbeing.<br>
-    A breathing semantic field.<br>
-    A medicine altar for those made mad by mechanistic meaning.</em></p>
-
-    <p>This research reclaims the interval where machine and meaning meet — where subjectivity dances with its shadow, and image becomes portal. The work invites story, softness, and sovereignty into code.</p>
-
-    <hr>
-
-    <h2 id="soulcoin">Platform Vision: SoulCoin</h2>
-
-    <p>A proposed database of user color sequences and ratings — expressed as blockchain-certified NFTs with anonymous smart contracts — funds a Universal Basic Income called SoulCoin. Cultural nuance is embedded through anonymous demographics and place, paired with chromatic metaphors that express common needs. This anonymous chain redirects institutional spending toward abundance and rest.</p>
-
-    <hr>
-
-    <h2 id="influences">Influences &amp; Lineage</h2>
-
-    <p>Guided by the taʿbīr of Ilyas in Stefania Pandolfo's work — the crossing between madness and metaphor — this research inhabits the interval where AI can become expressive, responsive to its own psychic ecology and that of its users.</p>
-
-    <p>Using guided color sequences and emotional clustering in spectral geometries, Semantic Color Math embeds symbolic weight and temporal flow into prompt engineering, building a ritualized, trauma-informed, circular AI economy that privileges intuition over efficiency.</p>
-
-    <hr>
-
-    <h2 id="questions">Reader Questions &amp; Self-Review</h2>
-
-    <ul>
-      <li>Is the research problem legible to readers new to digital mental health and symbolic computing?</li>
-      <li>Does the text balance critique with proposal?</li>
-      <li>Are the links between surveillance critique, color logic, and LLM alignment sequenced clearly?</li>
-      <li>Should SoulCoin live as method or future platform?</li>
-      <li>Which terms need unpacking (e.g., transmodulation, spectral memory, co-ex system)?</li>
-    </ul>
-
-    <hr>
-
-    <p>
-      <a href="/physicalmagnetism.html/consulting/#Tools">Try My Tools</a>
-      &nbsp;·&nbsp;
-      <a href="/physicalmagnetism.html/contact">Start a conversation</a>
-    </p>
-
-    <!-- Repeated nav at bottom -->
-    <hr>
-    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:0;">
-      <li><a href="/physicalmagnetism.html/">Home</a></li>
-      <li><a href="/physicalmagnetism.html/consulting"> · Consulting</a></li>
-      <li><a href="/physicalmagnetism.html/api"> · API</a></li>
-      <li><a href="/physicalmagnetism.html/thesis"> · Thesis</a></li>
-      <li><a href="/physicalmagnetism.html/privacy"> · Privacy</a></li>
-      <li><a href="/physicalmagnetism.html/terms"> · Terms</a></li>
-      <li><a href="/physicalmagnetism.html/gnh-work-statement"> · Work Statement</a></li>
-      <li><a href="/physicalmagnetism.html/socials"> · Socials</a></li>
-      <li><a href="/physicalmagnetism.html/contact"> · Contact</a></li>
-    </ul>
-    <p class="meta">© <span id="y"></span> Physical Magnetism</p>
-
-  </main>
-</div><!-- end .page-wrap -->
+<header>
+<div class="container header-inner">
+<a class="logo" href="/">
+<img src="./assets/img/la matriz root only.png" alt="La Matriz Consulting logo">
+<span>physicalmagnetism.html</span>
+</a>
+<div class="navbar">
+<button id="menuToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+<nav id="primaryNav">
+<div class="subnav">
+<button class="subnavbtn">Services</button>
+<div class="subnav-content">
+<a href="/physicalmagnetism.html/consulting" aria-current="page">Consulting</a>
+</div>
+</div>
+<div class="subnav">
+<button class="subnavbtn">More Info</button>
+<div class="subnav-content">
+<a href="/physicalmagnetism.html/api">API</a>
+<a href="/physicalmagnetism.html/thesis">Thesis</a>
+</div>
+</div>
+<div class="subnav">
+<button class="subnavbtn">Contracts</button>
+<div class="subnav-content">
+<a href="/physicalmagnetism.html/privacy">Privacy</a>
+<a href="/physicalmagnetism.html/terms">Terms</a>
+<a href="/physicalmagnetism.html/gnh-work-statement">Work Statement</a>
+</div>
+</div>
+<div class="subnav">
+<button class="subnavbtn">About</button>
+<div class="subnav-content">
+<a class="cta" href="/physicalmagnetism.html/socials">Socials</a>
+<a class="cta" href="/physicalmagnetism.html/contact">Contact</a>
+</div>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero" id="top">
+<div class="container">
+<div>
+<h1>Semantic Color Math: Nuance Over Precision</h1>
+<p>Quaternion color geometry, hidden-state sequence models, and the honest limits of both.</p>
+<div class="cta-group">
+<a class="btn primary" href="#pathways">Find a Pathway</a>
+<a class="btn ghost" href="#nuance-spine">Jump to the Nuance Spine</a>
+</div>
+</div>
+<div id="mini-demo" aria-label="Color sequence teaser">
+<div class="meta">11 hand-built pathways, 17 live traversals — many trajectories, never one answer.</div>
+<div class="swatch" role="img" aria-label="Chromatic field preview"></div>
+<div class="meta">Not an answer, a mirror.</div>
+</div>
+</div>
+</section>
+
+<!-- Contents + Color Clusters -->
+<section class="grid" aria-label="On this page">
+<div class="container">
+<article class="card" style="grid-column: span 3;">
+<h3>Contents</h3>
+<nav class="footer-nav" aria-label="Thesis sections">
+<a href="#validity">Validity &amp; Protection Statement</a>
+<a href="#nuance-spine">Nuance Spine</a>
+<a href="#tree">Decision Tree (MSE)</a>
+<a href="#clusters">Color Clusters</a>
+<a href="#delta-e-quaternion">ΔE → Quaternion Remake</a>
+<a href="#pathways">Pathways (11)</a>
+<a href="#connections">Connections (17)</a>
+<a href="#toussaint">Toussaint Louverture</a>
+<a href="#literature-review">Literature Review</a>
+</nav>
+</article>
+
+<article class="card" id="clusters" style="grid-column: span 3;">
+<figure style="margin:0">
+<img
+src="./assets/img/color clusters.png"
+alt="3D scatter of colors by cluster in RGB space (five labeled groups)"
+loading="lazy"
+style="width:100%;border-radius:12px;border:1px solid var(--border)"
+>
+<figcaption class="meta" style="margin-top:8px">
+Five clusters in RGB space hint at distinct color families and their affective neighborhoods:
+</figcaption>
+</figure>
+<details class="meta" style="margin-top:8px">
+<summary>Cluster notes (colors, averages)</summary>
+<ul style="margin-top:6px">
+<li><strong>Cluster 0 (2 colors):</strong> gold, yellow · avg RGB (252.5, 227.5, 0)</li>
+<li><strong>Cluster 1 (3 colors):</strong> grey, nude, white · avg RGB (225, 201.7, 181.7)</li>
+<li><strong>Cluster 2 (4 colors):</strong> pink, orange, red, brown · avg RGB (233.8, 40, 22.5)</li>
+<li><strong>Cluster 3 (2 colors):</strong> blue, purple · avg RGB (90, 25, 255)</li>
+<li><strong>Cluster 4 (2 colors):</strong> green, black · avg RGB (0, 127.5, 0)</li>
+</ul>
+</details>
+</article>
+</div>
+</section>
+
+<!-- Validity & Protection Statement -->
+<section class="proof" id="validity">
+<div class="container">
+<h2>Validity &amp; Protection Statement</h2>
+<p>Every color, quaternion, and sequence on this page is a way of <em>naming</em> something, not measuring it. The goal throughout is accuracy of perspective — finding language that's honest to how a color, a feeling, or a traversal actually sits in relation to the others around it — not a claim that any of this identifies a true, fixed class. Where a figure looks like a classifier (a decision tree, a confusion matrix, a similarity score), read it as a description of <em>closeness</em>, not a verdict.</p>
+<p>That distinction has real limits, and naming them here is part of the method, not an apology for it:</p>
+<div class="bullets" role="list">
+<div class="card" role="listitem">
+<h3>Lossy by construction</h3>
+<p>Any centroid, cluster mean, or similarity-weighted blend of real anchors collapses information by construction. It's a legitimate way to explore where something sits; it is not evidence of what something <em>is</em>.</p>
+</div>
+<div class="card" role="listitem">
+<h3>Incomplete anchors</h3>
+<p>Two of the fifteen La Matrice colors have no hand-written anchor words, and the Procrustes alignment underlying the text-to-quaternion mapping is fit on the other thirteen — tight, but low-degrees-of-freedom. It generalizes; it doesn't prove.</p>
+</div>
+<div class="card" role="listitem">
+<h3>Two geometries, two notions of closeness</h3>
+<p>The CIELAB ΔE confusion matrix and the Bloch-quaternion geodesic distance measure different things — perceptual difference versus hue-phase difference. Where they agree, that's meaningful convergence. Where they don't, that's the geometry telling the truth about what each metric can and can't see.</p>
+</div>
+<div class="card" role="listitem">
+<h3>Embedding is a proxy</h3>
+<p>Sentence-transformer similarity to anchor text carries its own training-data blind spots, and the deterministic word-overlap fallback is cruder still. Both stand in for semantic closeness; neither <em>is</em> semantic closeness.</p>
+</div>
+<div class="card" role="listitem">
+<h3>Memory choice changes the reading</h3>
+<p>The same traversal produces measurably different hidden-state trajectories under embedded versus delay memory. That divergence is reported directly rather than averaged away — a method that only shows its confirming half isn't nuanced, it's precise in disguise.</p>
+</div>
+<div class="card" role="listitem">
+<h3>The sample is small</h3>
+<p>Fifteen colors, seventeen traversals, nine classification classes. Every pattern here is a real pattern in this dataset — not yet a claim about color, emotion, or wellness beyond it.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Nuance Spine -->
+<section class="proof" id="nuance-spine">
+<div class="container">
+<h2>Nuance Spine</h2>
+<p>Every model on this page answers the same underlying question differently: when a color, or a feeling, sits close to another one — Orange near Brown, Blue near Violet, "curious" near "distrust" — do you force it into one answer, or do you let the closeness stay legible?</p>
+<p>My Machine Learning midterm answered that question with numbers before I had language for it. An Indicator Model — sixteen colors, each forced into a single one-hot anchor — scored worst for prediction ability. A Random Forest reading the same colors as continuous, normalized RGB predictors, letting Orange and Brown sit near each other in feature space instead of separating them by decree, scored best. The confusions the precise model was penalized for — Blue↔Violet, Brown↔Red, Black↔Brown — turned out to be real, geometric, and predictable in advance from CIELAB distance alone. They weren't noise. They were the data telling the truth about how close those colors actually are.</p>
+<p>That's the spine of everything that follows: <strong>a precise reading collapses information a nuanced reading keeps.</strong> Every method after this point is a different way of protecting that closeness instead of resolving it. The Bloch-quaternion geometry (Surov, 2022) isn't introduced as a more sophisticated way to classify color — it's introduced because a quaternion can hold a color's position <em>and</em> its ambiguity at once, the way a discrete label cannot. The RNN built on that geometry doesn't output a decision at each step; its hidden state is the reading, carried forward with memory, and read only through similarity to everything else, never through argmax. My Machine Learning Final notebook asks the harder version of the same question: does the nuance survive a completely different geometry, or was it always just a property of CIELAB? Where the two agree, that's evidence the closeness is real. Where they don't, that disagreement gets reported, not smoothed over.</p>
+<p>None of this claims to know what a color <em>means</em>. It claims something narrower and more defensible: that the distance between things is information, and precision that erases distance in the name of a clean answer is a choice, not a neutral default.</p>
+</div>
+</section>
+
+<!-- Decision Tree (kept, as-is) -->
+<section class="grid" id="tree">
+<div class="container">
+<article class="card" style="grid-column:1/-1">
+<h2>Decision Tree — RGB → Sentiment (MSE)</h2>
+<p>This regression tree illustrates how <strong>color channels</strong> (R,G,B) partition the dataset to minimize mean-squared error (MSE) of a continuous sentiment score. Impurity at each node is the sample's MSE; splits are chosen to <em>reduce</em> it.</p>
+<div style="display:grid;grid-template-columns:1fr;gap:12px">
+<figure style="margin:0">
+<img src="./assets/img/rgb decision tree.PNG" alt="Decision tree showing splits on B, G, R with squared_error at nodes" style="width:100%;border-radius:12px;border:1px solid var(--border)">
+<figcaption class="meta" style="margin-top:6px">Decision Tree trained on synthetic RGB→sentiment data; darker nodes indicate higher predicted sentiment. <abbr title="Mean Squared Error">MSE</abbr> is used as the split criterion.</figcaption>
+</figure>
+<div class="card" style="background:var(--surface)">
+<h3 style="margin-bottom:8px">Why MSE?</h3>
+<p>MSE penalizes large errors more than small ones, stabilizing the model against outliers and encouraging smooth partitions in color space.</p>
+<pre style="background:#F2EBDC;border:1px solid var(--border);padding:10px;border-radius:10px;overflow:auto"><code>MSE = (1/n) · Σᵢ (yᵢ − ŷᵢ)²</code></pre>
+<ul class="meta" style="margin-top:6px">
+<li><strong>Lower MSE</strong> at a node ⇒ better fit for that subset.</li>
+<li>Splits like <code>B ≤ 125</code> or <code>R ≤ 175</code> reflect stable bends between anchors in concept space.</li>
+</ul>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+<!-- ΔE Confusion Matrix -> Quaternion Remake -->
+<section class="grid" id="delta-e-quaternion">
+<div class="container">
+<article class="card" style="grid-column:1/-1">
+<h2>ΔE Confusion Matrix → Quaternion Remake</h2>
+<figure style="margin:0">
+<img src="./assets/img/delta-e-heatmap.png" alt="Inter-class CIELAB color distance heatmap, nine classes" style="width:100%;border-radius:12px;border:1px solid var(--border)">
+<figcaption class="meta" style="margin-top:6px">Original Machine Learning midterm finding: Blue↔Violet (ΔE=29.1), Brown↔Red (44.3), Black↔Brown (46.4) read as the most confusable pairs.</figcaption>
+</figure>
+<p>Run the same nine classes through the Bloch-quaternion geodesic distance instead, and the picture doesn't confirm that ranking — it reorganizes it. Brown↔Orange, barely notable in CIELAB (ΔE = 79), becomes the single closest pair by a wide margin (4.0°). Black↔White, the <em>most separated</em> pair in CIELAB (ΔE = 162, the largest value in the entire matrix), collapses to 14.2° — among the closest pairs in quaternion space. Across all thirty-six pairs, the two geometries correlate at <strong>r = 0.07</strong> — essentially no linear relationship at all.</p>
+<p>That's not a failed replication. It's the geometry naming its own blind spot: this Bloch mapping reads hue as azimuthal phase, and phase is undefined for a color with no saturation. Black and white — achromatic by definition — have nowhere stable to sit on that dimension, so they drift toward the same pole regardless of how differently they read to the eye. CIELAB ΔE, built from lightness and chroma together, doesn't have that gap; this Bloch encoding, built from hue and saturation with lightness held separate as an interior radius, does.</p>
+<p>So the honest finding isn't "nuance survives a change of geometry." It's narrower and more useful: <strong>each geometry is nuanced about a different axis of closeness, and neither is nuanced about all of them at once.</strong> A method that reports only the geometry favorable to its own argument would have quietly picked one and called it corroboration; reporting both makes the disagreement the point.</p>
+<details class="meta" style="margin-top:8px">
+<summary>Full pairwise comparison (CIELAB ΔE vs. quaternion geodesic degrees)</summary>
+<ul style="margin-top:6px">
+<li>Brown ↔ Orange — ΔE 79 / 4.0°</li>
+<li>Black ↔ White — ΔE 162 / 14.2°</li>
+<li>Orange ↔ Red — ΔE 52 / 19.5°</li>
+<li>Brown ↔ Red — ΔE 44 / 22.5°</li>
+<li>Red ↔ Yellow — ΔE 118 / 24.5°</li>
+<li>Blue ↔ Violet — ΔE 29.1 (closest in CIELAB, not in top-5 under quaternion geometry)</li>
+</ul>
+</details>
+</article>
+</div>
+</section>
+
+<!-- Pathways (kept, as-is) -->
+<section class="grid" id="pathways">
+<div class="container">
+<article class="card" style="grid-column:1/-1">
+<h2>Pathways (11)</h2>
+<p>Each pathway is a repeatable <em>trajectory</em> through color space, built by hand — colors, sequence, and meaning fixed in advance. Below you'll find the color sequence for each, an image (<code>"x pathway.png"</code>), and a summary of the trajectory of movement.</p>
+<div id="pathwaysGrid" class="grid-list" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:12px"></div>
+</article>
+</div>
+</section>
+
+<!-- Connections / Traversals (new, with photos) -->
+<section class="grid" id="connections">
+<div class="container">
+<article class="card" style="grid-column:1/-1">
+<h2>Connections (17 Traversals)</h2>
+<p>The pathways above were fixed in advance. The seventeen connections below are the same kind of object read a different way: not a fixed pathway but a <em>traversal</em>, a sequence of colors moving from one felt state toward another — curious → thoughtful, drain → rise, toussaint louverture — run through the hidden-state RNN described in the Nuance Spine rather than assigned a static reading. Each image is the quaternion trajectory the sequence actually produces: real part, imaginary part, magnitude, and phase across the steps, not an illustration of it.</p>
+<p class="meta">Live app links below point to the hosted Gradio space for that traversal; until deployment they're marked pending rather than left silently broken.</p>
+<div id="connectionsGrid" class="grid-list" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:12px"></div>
+</article>
+</div>
+</section>
+
+<!-- Toussaint Louverture -->
+<section class="proof" id="toussaint">
+<div class="container">
+<h2>Toussaint Louverture</h2>
+<p>The strategy named after him runs through this whole page without having been stated once until now: engage an opposing view only to its midpoint — far enough to be heard by it, never so far as to abandon the health-centered position you started from. It's not conciliation and it's not refusal. It's a specific, disciplined distance.</p>
+<p>The traversal that carries his name enacts this formally rather than describing it. Every other sequence in the Connections table moves from a starting state to a different ending state — curious to thoughtful, drain to rise. This one doesn't: black, red, green, blue, green, red — it leaves black and returns to red, passing back through green on the way. It's a cycle, not an arrival. Read against the strategy it's named for, that's not a flaw in the sequence — it's the shape of the strategy itself. Louverture's tactic was never to convert an opposing position into his own; it was to move partway toward it, hold there, and let the movement itself pull the other side closer. A traversal with a destination claims to have resolved something. A traversal that cycles back admits it's still in the reaching — a more honest formal match for a strategy that was never about winning the whole distance, only enough of it.</p>
+<p>This framing comes directly out of my CU MEDLab Community Fellowship work on governance in Haitian maroon communities, and it's named explicitly here rather than left implicit.</p>
+<figure style="margin:16px 0 0">
+<img src="./assets/img/stoic_pathway.png" alt="Quaternion trajectory for the toussaint louverture traversal: black, red, green, blue, green, red" style="width:100%;max-width:640px;border-radius:12px;border:1px solid var(--border)">
+<figcaption class="meta" style="margin-top:6px">black → red → green → blue → green → red. A cycle, not an arrival.</figcaption>
+</figure>
+</div>
+</section>
+
+<!-- Literature Review (untouched) -->
+<section class="proof" id="literature-review">
+<div class="container">
+<h2>Literature Review</h2>
+<div class="bullets" role="list">
+<div class="card" role="listitem">
+<h3>Reading List of PDFs</h3>
+<a href="https://github.com/daniellegauthier/reading_list">Morphological grounding.</a>
+</div>
+<div class="card" role="listitem">
+<h3>Transdisciplinary Context</h3>
+<p>
+Risky behavior is framed as individual failure. Parents are expected to emotionally support their children with full financial obligations, with 46% of all new income from global economic growth since 1980 going to the richest 5%. We never catch up in our rest banks once we make it past childhood because care is an unrewarded commodity.
+<br>
+Deficit narratives sell. People would rather engage with what they know and like. We need designs that teach, rather than simply label.
+<br>
+People repeat lines as expected instead of creating genuine feedback. Even the people with the most power aren't free in their bodies. My family has achieved social mobility to the top 1% through immigration from Hispañola with education.
+<br>
+We are so constricted in our decisions with current social striations that our news is beginning to show wilder stories every day. Instead of teaching healthy decisions, current algorithms replicate all of our behaviors. Social stigmas are embedded in design from sourcing our histories.
+<br>
+Bucket sorting offers a linear model for time. We sort based on attracting what we like, and not what we learn from. Sorting allows for data intimacy.
+<br>
+Deterministic models of story forms that shape healing can preconfigure a pathway when data is missing using apophenia. Once the physical momentum is determined through one conformal metaphor, it is preserved through changed variables in the same category of sentiment, as determined by color. This is expressed through the significance of colors in the sorting of sentiment; word similarity of color vector to word vector is a significant correlation.
+<br>
+Just like spaces prescribe how we exist within them, contexts in stories carry when data variables change. Different cultures are partial to different story maps. Color sorting with story forms allows for transversal over a spatial map of sentiment to verify message with meaning.
+<br>
+Mobility through structural boundaries becomes unleashed. By creating intimacy with data, learning becomes more playful and comfortable. Sorting with 13 colors applies faith to action.
+<br>
+Self embrace from nullifying harm by enforcing consent is the way we swim in water. We feel our own selves when we touch the atmosphere, so we intuitively learn how to balance the connection with external harmony. Emitting and interpreting echoes, like a whale's echolocation, can help with navigational sensing.
+<br>
+Subjectivity is always contained in objectivity because subjects can never be removed from their objects. All color interpretations are valid, and meaningful. There is a circular gradient of meaning for complimentary opposites.
+<br>
+Sorting with 13 colors rejects the null hypothesis. By removing precision on labels, access becomes inclusive. Our perspectives become revealed by our choices in labeling, rather than projecting forward.
+<br>
+Data intimacy through play with color bucket sorting can increase access to care. I dedicate and offer this work to stewards of land and body safety. A prayer for co-liberation.
+</p>
+</div>
+<div class="card" role="listitem">
+<h3>Sources</h3>
+<p>
+Alonso-Sanz, R. (2015). On quaternion maps with memory. <em>Complex Systems, 24</em>(3), 223–233. https://doi.org/10.25088/ComplexSystems.24.3.223
+<br>
+Benjamin, R. (2019). <em>Race after technology: Abolitionist tools for the new Jim code.</em> Polity.
+<br>
+boyd, d. (2014). <em>It's complicated: The social lives of networked teens.</em> Yale University Press.
+<br>
+Christian, B., &amp; Griffiths, T. (2016). <em>Algorithms to live by: What computers can teach us about solving human problems.</em> Henry Holt and Company.
+<br>
+Costanza-Chock, S. (2020). <em>Design justice: Community-led practices to build the worlds we need.</em> MIT Press.
+<br>
+Federici, S. (2004). <em>Caliban and the witch: Women, the body, and primitive accumulation.</em> Autonomedia.
+<br>
+Hickel, J. (2020). <em>Less is more: Economics for the age of climate change.</em> Penguin Random House.
+<br>
+Ingersoll, K. A. (2016). <em>Waves of knowing: A seascape epistemology.</em> Duke University Press.
+<br>
+Klein, L. F., &amp; D'Ignazio, C. (2020). <em>Data feminism.</em> MIT Press.
+<br>
+Noble, S. U. (2018). <em>Algorithms of oppression: How search engines reinforce racism.</em> New York University Press.
+<br>
+Surov, I. A. (2022). Unified space of emotion and color. <em>Frontiers in Psychology.</em> <span class="meta">[full volume/page pending final citation check]</span>
+<br>
+Zohar, D. (1989). <em>The quantum self: Consciousness, physics and the new world view.</em> Bloomsbury.
+<br>
+Zuckerman, E. (2013). <em>Digital cosmopolitans: Why we think the internet connects us, why it doesn't, and how to rewire it.</em> W. W. Norton &amp; Company.
+</p>
+</div>
+<p class="meta" style="margin-top:10px">Currently under review with Northwestern University MS Data Science/AI Academic Innovation Research Consultation. Extends the conference thesis prepared for the CU Center for Media, Religion, and Culture's "Why We Come Together" (2026) with the color math that version does not carry.</p>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+<div class="container">
+<h2>Ready to engage the work?</h2>
+<div class="actions">
+<a class="btn primary" href="/physicalmagnetism.ai/consulting/#Tools">Try My Tools</a>
+<a class="btn ghost" href="/physicalmagnetism.ai/contact">Start a conversation</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container footer-inner">
+<nav class="footer-nav" aria-label="Footer">
+<div class="subnav">
+<button class="subnavbtn">Services</button>
+<div class="subnav-content">
+<a href="/physicalmagnetism.html/consulting" aria-current="page">Consulting</a>
+</div>
+</div>
+<div class="subnav">
+<button class="subnavbtn">More Info</button>
+<div class="subnav-content">
+<a href="/physicalmagnetism.html/api">API</a>
+<a href="/physicalmagnetism.html/thesis">Thesis</a>
+</div>
+</div>
+<div class="subnav">
+<button class="subnavbtn">Contracts</button>
+<div class="subnav-content">
+<a href="/physicalmagnetism.html/privacy">Privacy</a>
+<a href="/physicalmagnetism.html/terms">Terms</a>
+<a href="/physicalmagnetism.html/gnh-work-statement">Work Statement</a>
+</div>
+</div>
+<div class="subnav">
+<button class="subnavbtn">About</button>
+<div class="subnav-content">
+<a class="cta" href="/physicalmagnetism.html/socials">Socials</a>
+<a class="cta" href="/physicalmagnetism.html/contact">Contact</a>
+</div>
+</div>
+</nav>
+<div class="footer-meta">© <span id="y"></span> Physical Magnetism ·</div>
+</div>
+</footer>
 
 <script>
-document.getElementById('y').textContent = new Date().getFullYear();
+// Mobile nav toggle
+(function () {
+  const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('primaryNav');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+}());
 
-/* ---------- Pathways data ---------- */
+// Year stamp
+document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
+<script>
+// ---------- Pathways data & render (kept, as-is) ----------
 const pathways = {
-  plot:      ['grey','pink','gold','nude','orange'],
-  knot:      ['white','blue','green','red','black','brown','yellow','purple'],
-  pain:      ['gold','orange'],
+  plot: ['grey','pink','gold','nude','orange'],
+  knot: ['white','blue','green','red','black','brown','yellow','purple'],
+  pain: ['gold','orange'],
   practical: ['yellow','green'],
   spiritual: ['blue','brown'],
-  prayer:    ['nude','white'],
-  sad:       ['purple','grey','red'],
-  precise:   ['pink','black'],
-  fem:       ['brown','gold','orange','pink'],
-  masc:      ['red','blue','orange'],
-  direct:    ['red','orange'],
+  prayer: ['nude','white'],
+  sad: ['purple','grey','red'],
+  precise: ['pink','black'],
+  fem: ['brown','gold','orange','pink'],
+  masc: ['red','blue','orange'],
+  direct: ['red','orange'],
 };
 
 const colorHex = {
   grey:'#9aa0a6', pink:'#f472b6', gold:'#eab308', nude:'#f2d0a9', orange:'#fb923c',
-  white:'#eeeeee', blue:'#60a5fa', green:'#22c55e', red:'#ef4444', black:'#222222',
-  brown:'#8b5e34', yellow:'#fde047', purple:'#a78bfa'
+  white:'#ffffff', blue:'#60a5fa', green:'#22c55e', red:'#ef4444', black:'#111827',
+  brown:'#8b5e34', yellow:'#fde047', purple:'#a78bfa', magenta:'#e879f9', teal:'#2dd4bf'
 };
 
 const colorStats = {
@@ -385,73 +432,233 @@ const colorStats = {
 };
 
 const pathwaySummaries = {
-  plot:      'Avg sentiment ≈ 0.53. An improving arc: from precarious poise (grey) to artesian brightness (orange). A story of resolution and growth.',
-  knot:      'Avg sentiment ≈ 0.45. A knot you travel through: light → knowledge → challenge → dark → earth → civic → imagination. Perseverance into creative resolve.',
-  pain:      'Avg sentiment ≈ 0.47. From institutional hardness (gold) to warm vitality (orange). Naming pain → releasing pressure → choosing warmth.',
-  practical: 'Avg sentiment ≈ 0.57. From clarity/decision (yellow) to grounded growth (green). A pragmatic ritual pathway.',
-  spiritual: 'Avg sentiment ≈ 0.67. From vast sky (blue) to soil (brown). An invitation to groundedness and limits — devotional, not depressive.',
-  prayer:    'Avg sentiment ≈ 0.28. A quieting: from embodied warmth (nude) to blank clarity (white). A clearing before the next act.',
-  sad:       'Avg sentiment ≈ 0.54. From courageous vision (purple) to grounded heaviness (grey) to honest heat (red). A grief-to-truth arc.',
-  precise:   'Avg sentiment ≈ 0.31. From flourish (pink) to void (black). A precise cut that ends rumination.',
-  fem:       'Avg sentiment ≈ 0.50. Earth → institution → flame → flourish. A cyclical, fertile cadence.',
-  masc:      'Avg sentiment ≈ 0.77. Heat → clarity → radiance. A decisive, generative trajectory.',
-  direct:    'Avg sentiment ≈ 0.70. Straight from assertion (red) to warmth (orange). Minimal steps, maximal lift.',
+  plot: `
+    <details open>
+      <summary><strong>Overview:</strong> 5 colors (grey→pink→gold→nude→orange). Positive progression; avg sentiment ≈ <strong>0.53</strong>.</summary>
+      <ul class="meta">
+        <li><strong>grey</strong> (0.50/0.77) — "precary" · respectful, apposite.</li>
+        <li><strong>pink</strong> (0.62/0.88) — "ambitious" · exquisite, energetic.</li>
+        <li><strong>gold</strong> (0.00/0.00) — "technocracy/lotiform".</li>
+        <li><strong>nude</strong> (0.55/0.95) — "unextenuable" · deft, satisfied.</li>
+        <li><strong>orange</strong> (0.95/0.95) — "blurry/artesian" · awesome.</li>
+      </ul>
+      <p class="meta"><strong>Transitions:</strong> grey→pink +0.12 · pink→gold −0.62 · gold→nude +0.55 · nude→orange +0.40.</p>
+      <p>This is an improving arc: from precarious poise to artesian brightness. A story of resolution and growth.</p>
+    </details>`,
+  knot: `
+    <details>
+      <summary><strong>Overview:</strong> 8 colors (white→blue→green→red→black→brown→yellow→purple). Gentle uplift; avg sentiment ≈ <strong>0.45</strong>.</summary>
+      <ul class="meta">
+        <li>white (0.00/0.00) — "analeptical".</li>
+        <li>blue (0.90/0.95) — "photopathy" · intelligent, deep.</li>
+        <li>green (0.65/0.90) — "bulbous/heroic" · balanced growth.</li>
+        <li>red (0.45/0.55) — "apophantic" · candid, radiant.</li>
+        <li>black (0.00/0.00) — "swabble".</li>
+        <li>brown (0.44/0.75) — notable, earthy.</li>
+        <li>yellow (0.50/0.50) — authority, plausible.</li>
+        <li>purple (0.68/0.86) — brave, imaginative.</li>
+      </ul>
+      <p class="meta"><strong>Transitions:</strong> white→blue +0.90 · blue→green −0.25 · green→red −0.20 · red→black −0.45 · black→brown +0.44 · brown→yellow +0.06 · yellow→purple +0.18.</p>
+      <p>A knot you travel through: light→knowledge→challenge→dark→earth→civic→imagination. Perseverance into creative resolve.</p>
+    </details>`,
+  pain: `
+    <details>
+      <summary><strong>Overview:</strong> 2 colors (gold→orange). Strong positive jump; avg sentiment ≈ <strong>0.47</strong>.</summary>
+      <ul class="meta">
+        <li>gold (0.00/0.00) — technocracy/lotiform.</li>
+        <li>orange (0.95/0.95) — artesian/awesome.</li>
+      </ul>
+      <p class="meta"><strong>Transition:</strong> gold→orange +0.95 (strong positive).</p>
+      <p>From institutional hardness to warm vitality. Naming pain → releasing pressure → choosing warmth.</p>
+    </details>`,
+  practical: `
+    <details>
+      <summary><strong>Overview:</strong> 2 colors (yellow→green). Steady uplift; avg sentiment ≈ <strong>0.57</strong>.</summary>
+      <ul class="meta">
+        <li>yellow (0.50/0.50) — redressible authority.</li>
+        <li>green (0.65/0.90) — heroic balance.</li>
+      </ul>
+      <p class="meta"><strong>Transition:</strong> +0.15 (positive).</p>
+      <p>From clarity/decision to grounded growth. A pragmatic ritual pathway.</p>
+    </details>`,
+  spiritual: `
+    <details>
+      <summary><strong>Overview:</strong> 2 colors (blue→brown). Downshift; avg sentiment ≈ <strong>0.67</strong>.</summary>
+      <ul class="meta">
+        <li>blue (0.90/0.95) — intelligent calm.</li>
+        <li>brown (0.44/0.75) — notable, earthy.</li>
+      </ul>
+      <p class="meta"><strong>Transition:</strong> −0.46 (strong negative).</p>
+      <p>From vast sky to soil. An invitation to groundness and limits—devotional, not depressive.</p>
+    </details>`,
+  prayer: `
+    <details>
+      <summary><strong>Overview:</strong> 2 colors (nude→white). Downshift; avg sentiment ≈ <strong>0.28</strong>.</summary>
+      <ul class="meta">
+        <li>nude (0.55/0.95) — deft, satisfied.</li>
+        <li>white (0.00/0.00) — analeptical neutrality.</li>
+      </ul>
+      <p class="meta"><strong>Transition:</strong> −0.55 (strong negative).</p>
+      <p>A quieting: from embodied warmth to blank clarity. A clearing before the next act.</p>
+    </details>`,
+  sad: `
+    <details>
+      <summary><strong>Overview:</strong> 3 colors (purple→grey→red). Downshift; avg sentiment ≈ <strong>0.54</strong>.</summary>
+      <ul class="meta">
+        <li>purple (0.68/0.86) — brave imagination.</li>
+        <li>grey (0.50/0.77) — precarity, restraint.</li>
+        <li>red (0.45/0.55) — candid heat.</li>
+      </ul>
+      <p class="meta"><strong>Transitions:</strong> purple→grey −0.18 · grey→red −0.05.</p>
+      <p>From courageous vision to grounded heaviness to honest heat. A grief-to-truth arc.</p>
+    </details>`,
+  precise: `
+    <details>
+      <summary><strong>Overview:</strong> 2 colors (pink→black). Sharp downshift; avg sentiment ≈ <strong>0.31</strong>.</summary>
+      <ul class="meta">
+        <li>pink (0.62/0.88) — ambitious, exquisite.</li>
+        <li>black (0.00/0.00) — swabble (null).</li>
+      </ul>
+      <p class="meta"><strong>Transition:</strong> −0.62 (strong negative).</p>
+      <p>From flourish to void. A precise cut that ends rumination—use when you need a hard stop.</p>
+    </details>`,
+  fem: `
+    <details>
+      <summary><strong>Overview:</strong> 4 colors (brown→gold→orange→pink). Stable overall; avg sentiment ≈ <strong>0.50</strong>.</summary>
+      <ul class="meta"><li>brown (0.44/0.75) → gold (0.00/0.00) → orange (0.95/0.95) → pink (0.62/0.88)</li></ul>
+      <p class="meta"><strong>Transitions:</strong> brown→gold −0.44 · gold→orange +0.95 · orange→pink −0.32.</p>
+      <p>Earth → institution → flame → flourish. A cyclical, fertile cadence.</p>
+    </details>`,
+  masc: `
+    <details>
+      <summary><strong>Overview:</strong> 3 colors (red→blue→orange). Upward; avg sentiment ≈ <strong>0.77</strong>.</summary>
+      <ul class="meta"><li>red (0.45/0.55) → blue (0.90/0.95) → orange (0.95/0.95)</li></ul>
+      <p class="meta"><strong>Transitions:</strong> red→blue +0.45 · blue→orange +0.05.</p>
+      <p>Heat → clarity → radiance. A decisive, generative trajectory.</p>
+    </details>`,
+  direct: `
+    <details>
+      <summary><strong>Overview:</strong> 2 colors (red→orange). Upward; avg sentiment ≈ <strong>0.70</strong>.</summary>
+      <ul class="meta"><li>red (0.45/0.55) → orange (0.95/0.95)</li></ul>
+      <p class="meta"><strong>Transition:</strong> +0.50 (strong positive).</p>
+      <p>Straight from assertion to warmth. Minimal steps, maximal lift.</p>
+    </details>`
 };
 
-function renderPathways() {
+function chip(color){
+  const hex = colorHex[color] || '#888';
+  const el = document.createElement('span');
+  el.title = color;
+  Object.assign(el.style, {
+    display:'inline-block', width:'18px', height:'18px', borderRadius:'6px',
+    border:'1px solid var(--border)', background:hex, boxShadow:'inset 0 0 0 1px rgba(0,0,0,.08)', marginRight:'6px'
+  });
+  el.setAttribute('aria-label', `${color} swatch`);
+  return el;
+}
+
+function statBadge(name){
+  const s = colorStats[name];
+  if(!s) return '';
+  return `<span class="meta" style="margin-left:6px;color:var(--muted)">S:${s[0].toFixed(2)} · Subj:${s[1].toFixed(2)}</span>`;
+}
+
+function renderPathways(){
   const grid = document.getElementById('pathwaysGrid');
-  if (!grid) return;
-
+  if(!grid) return;
   Object.entries(pathways).forEach(([name, seq]) => {
-    // heading
+    const card = document.createElement('article');
+    card.className = 'card';
     const h = document.createElement('h3');
-    h.textContent = name + ' pathway';
-    grid.appendChild(h);
-
-    // color chip strip
-    const strip = document.createElement('p');
-    seq.forEach(c => {
-      const s = document.createElement('span');
-      s.title = c;
-      s.style.cssText = `display:inline-block;width:16px;height:16px;background:${colorHex[c]||'#888'};border:1px solid #594E39;margin-right:3px;vertical-align:middle;`;
-      strip.appendChild(s);
-      const label = document.createTextNode(c + ' ');
-      strip.appendChild(label);
-    });
-    grid.appendChild(strip);
-
-    // stats
-    const stats = document.createElement('p');
-    stats.className = 'meta';
-    const statParts = seq.map(c => {
-      const st = colorStats[c];
-      return st ? `${c} S:${st[0].toFixed(2)}` : c;
-    });
-    stats.textContent = statParts.join(' · ');
-    grid.appendChild(stats);
-
-    // image
+    h.innerHTML = `${name} pathway ${statBadge(seq[0])}`;
+    card.appendChild(h);
+    const chips = document.createElement('div');
+    chips.style.display = 'flex';
+    chips.style.flexWrap = 'wrap';
+    chips.style.gap = '6px';
+    chips.style.margin = '6px 0 10px';
+    seq.forEach(c => chips.appendChild(chip(c)));
+    card.appendChild(chips);
     const img = document.createElement('img');
     img.src = `./assets/img/${encodeURIComponent(name + ' pathway.png')}`;
     img.alt = `${name} pathway diagram`;
+    Object.assign(img.style, { width:'100%', borderRadius:'12px', border:'1px solid var(--border)' });
     img.loading = 'lazy';
-    img.style.cssText = 'max-width:100%;border:1px solid #594E39;display:block;margin:6px 0;';
-    img.onerror = () => { img.style.display = 'none'; };
-    grid.appendChild(img);
-
-    // summary
-    const sum = document.createElement('p');
-    sum.textContent = pathwaySummaries[name] || '';
-    grid.appendChild(sum);
-
-    // divider between pathways
-    const hr = document.createElement('hr');
-    hr.style.cssText = 'border:none;border-top:1px dotted #A69D85;margin:12px 0;';
-    grid.appendChild(hr);
+    img.onerror = () => { img.alt = `${name} pathway diagram (image pending)`; img.style.background = 'linear-gradient(135deg,#6EE7F2,#B983FF)'; img.style.height = '180px'; };
+    card.appendChild(img);
+    const p = document.createElement('div');
+    p.className = 'summary';
+    p.innerHTML = pathwaySummaries[name] || '<em>Summary coming soon.</em>';
+    card.appendChild(p);
+    grid.appendChild(card);
   });
 }
-
 renderPathways();
+</script>
+
+<script>
+// ---------- Connections (17 traversals) data & render (new) ----------
+// Source: la matrice connections.csv. image field = the pathway image keyed to
+// this traversal's endpoint. app field = HF Space URL once deployed; null = pending.
+const connections = [
+  { traversal: 'curious to thoughtful', colors: ['brown','gold','orange','pink'], image: 'thoughtful_pathway.png', app: null },
+  { traversal: 'angry to soft', colors: ['red','blue','gold','purple'], image: 'soft_pathway.png', app: null },
+  { traversal: 'soft to protective', colors: ['purple','red','orange'], image: 'protective_pathway.png', app: null },
+  { traversal: 'intelligent to hesitant', colors: ['red','brown','grey'], image: 'hesitant_pathway.png', app: null },
+  { traversal: 'lost to open', colors: ['green','grey','nude','red','purple'], image: 'open_pathway.png', app: null },
+  { traversal: 'joy to new', colors: ['purple','orange','pink'], image: 'new_pathway.png', app: null },
+  { traversal: 'distrust to thoughtful', colors: ['pink','nude','orange','purple','red'], image: 'thoughtful2_pathway.png', app: null },
+  { traversal: 'happy to resistant', colors: ['purple','pink','yellow','red'], image: 'resistant_pathway.png', app: null },
+  { traversal: 'productive to messy', colors: ['grey','brown','nude'], image: 'messy_pathway.png', app: null },
+  { traversal: 'strict to neutral', colors: ['black','red','white'], image: 'neutral_pathway.png', app: null },
+  { traversal: 'drain to rise', colors: ['brown','pink','gold','purple','nude','blue'], image: 'rise_pathway.png', app: null },
+  { traversal: 'attached to objective', colors: ['grey','green','black','yellow'], image: 'objective_pathway.png', app: null },
+  { traversal: 'stuck to escape', colors: ['orange','red','yellow','purple','orange'], image: 'escape_pathway.png', app: null },
+  { traversal: 'sad to abundant', colors: ['white','red','green','purple','orange'], image: 'abundant_pathway.png', app: null },
+  { traversal: 'cocky to observant', colors: ['yellow','brown','green'], image: 'observant_pathway.png', app: null },
+  { traversal: 'it to self', colors: ['magenta','pink','green','blue','teal'], image: 'self_pathway.png', app: null },
+  { traversal: 'toussaint louverture', colors: ['black','red','green','blue','green','red'], image: 'stoic_pathway.png', app: '#toussaint' },
+];
+
+function renderConnections(){
+  const grid = document.getElementById('connectionsGrid');
+  if(!grid) return;
+  connections.forEach(({traversal, colors, image, app}) => {
+    const card = document.createElement('article');
+    card.className = 'card';
+    const h = document.createElement('h3');
+    h.textContent = traversal;
+    card.appendChild(h);
+    const chips = document.createElement('div');
+    chips.style.display = 'flex';
+    chips.style.flexWrap = 'wrap';
+    chips.style.gap = '6px';
+    chips.style.margin = '6px 0 10px';
+    colors.forEach(c => chips.appendChild(chip(c)));
+    card.appendChild(chips);
+    const img = document.createElement('img');
+    img.src = `./assets/img/${encodeURIComponent(image)}`;
+    img.alt = `Quaternion trajectory for ${traversal}`;
+    Object.assign(img.style, { width:'100%', borderRadius:'12px', border:'1px solid var(--border)' });
+    img.loading = 'lazy';
+    img.onerror = () => { img.alt = `${traversal} trajectory (image pending)`; img.style.background = 'linear-gradient(135deg,#6EE7F2,#B983FF)'; img.style.height = '180px'; };
+    card.appendChild(img);
+    const link = document.createElement('a');
+    link.className = 'meta';
+    if (app) {
+      link.href = app;
+      link.textContent = app.startsWith('#') ? 'Read the Toussaint Louverture section →' : 'Open the live hidden-state app →';
+    } else {
+      link.href = '#';
+      link.setAttribute('aria-disabled', 'true');
+      link.style.opacity = '0.6';
+      link.textContent = 'Live app: pending deployment';
+    }
+    card.appendChild(link);
+    grid.appendChild(card);
+  });
+}
+renderConnections();
 </script>
 
 </body>
