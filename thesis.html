@@ -209,7 +209,7 @@ Five clusters in RGB space hint at distinct color families and their affective n
 <article class="card" style="grid-column:1/-1">
 <h2>ΔE Confusion Matrix → Quaternion Remake</h2>
 <figure style="margin:0">
-<img src="./assets/img/delta-e-heatmap.png" alt="Inter-class CIELAB color distance heatmap, nine classes" style="width:100%;border-radius:12px;border:1px solid var(--border)">
+<img src="./assets/img/delta e heatmap.png" alt="Inter-class CIELAB color distance heatmap, nine classes" style="width:100%;border-radius:12px;border:1px solid var(--border)">
 <figcaption class="meta" style="margin-top:6px">Original Machine Learning midterm finding: Blue↔Violet (ΔE=29.1), Brown↔Red (44.3), Black↔Brown (46.4) read as the most confusable pairs.</figcaption>
 </figure>
 <p>Run the same nine classes through the Bloch-quaternion geodesic distance instead, and the picture doesn't confirm that ranking — it reorganizes it. Brown↔Orange, barely notable in CIELAB (ΔE = 79), becomes the single closest pair by a wide margin (4.0°). Black↔White, the <em>most separated</em> pair in CIELAB (ΔE = 162, the largest value in the entire matrix), collapses to 14.2° — among the closest pairs in quaternion space. Across all thirty-six pairs, the two geometries correlate at <strong>r = 0.07</strong> — essentially no linear relationship at all.</p>
